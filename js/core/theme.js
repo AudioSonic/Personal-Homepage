@@ -1,3 +1,7 @@
+export function setTheme(theme) {
+
+}
+
 const themeState = {
     currentTheme: "dark"
 };
