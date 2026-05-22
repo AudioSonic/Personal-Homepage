@@ -1,12 +1,16 @@
-/*   <---- Mobile Ansicht ---->   */
+body {
+    background-color: var(--color-background);
+    color: var(--color-text);
 
-
-/*   <---- Tablet Ansicht: 768px ---->   */
-@media (min-width: 768px) {
-
+    transition:
+        background-color var(--transition-base),
+        color var(--transition-base);
 }
 
-/*   <---- Desktop Ansicht: 1024px ---->   */
-@media (min-width: 1024px){
+main {
+    overflow: hidden;
+}
 
+section {
+    padding-block: var(--spacing-xxl);
 }
