@@ -1,12 +1,19 @@
-/*   <---- Mobile Ansicht ---->   */
-
-
-/*   <---- Tablet Ansicht: 768px ---->   */
-@media (min-width: 768px) {
-
+body {
+    font-family: var(--font-primary);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
 }
 
-/*   <---- Desktop Ansicht: 1024px ---->   */
-@media (min-width: 1024px){
+h1 {
+    font-size: var(--font-size-xxl);
+    font-weight: 700;
+}
 
+h2 {
+    font-size: var(--font-size-xl);
+}
+
+p {
+    font-size: var(--font-size-md);
+    color: var(--color-text-muted);
 }
