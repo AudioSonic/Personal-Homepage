@@ -1,12 +1,47 @@
-/*   <---- Mobile Ansicht ---->   */
+*,
+*::before,
+*::after {
+    margin: 0;
+    padding: 0;
 
-
-/*   <---- Tablet Ansicht: 768px ---->   */
-@media (min-width: 768px) {
-
+    box-sizing: border-box;
 }
 
-/*   <---- Desktop Ansicht: 1024px ---->   */
-@media (min-width: 1024px){
+html {
+    scroll-behavior: smooth;
+}
 
+body {
+    min-height: 100vh;
+}
+
+img,
+picture {
+    display: block;
+
+    max-width: 100%;
+}
+
+ul,
+ol {
+    list-style: none;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+button,
+input,
+textarea,
+select {
+    font: inherit;
+}
+
+button {
+    background: none;
+    border: none;
+
+    cursor: pointer;
 }
