@@ -5,5 +5,5 @@ async function loadComponent(path, elementId) {
     document.getElementById(elementId).innerHTML = data;
 }
 
-loadComponent("header.html", "header");
-loadComponent("footer.html","footer");
+loadComponent("../html/components/header.html", "header");
+loadComponent("../html/components/footer.html","footer");
