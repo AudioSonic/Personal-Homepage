@@ -1,5 +1,10 @@
 body {
     background-color: var(--color-background);
+    color: var(--color-text);
+
+    transition:
+        background-color var(--transition-base),
+        color var(--transition-base);
 }
 
 main {

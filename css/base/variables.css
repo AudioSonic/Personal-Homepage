@@ -1,4 +1,4 @@
-:root {
+:root, [data-theme="dark"] {
 
     /* ============================= */
     /* Colors */
@@ -94,3 +94,14 @@
     --breakpoint-tablet: 768px;
     --breakpoint-desktop: 1024px;
 }
+
+[data-theme="light"] {
+
+    --color-background: #f8fafc;
+    --color-surface: #ffffff;
+
+    --color-text: #111827;
+    --color-text-muted: #4b5563;
+
+    --color-primary: #7c4dff;
+    }
