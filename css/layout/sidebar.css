@@ -1,0 +1,9 @@
+#sidebar{
+    height: 97vh;
+    background-color: var(--color-surface);
+}
+
+#sidebar img{
+    width: 200px;
+    height: 200px;
+}

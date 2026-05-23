@@ -1,4 +1,8 @@
 /*   <---- Mobile Ansicht ---->   */
+.sidebar-grid{
+    display: grid;
+    grid-template-columns: minmax(250px, 350px) 1fr;
+}
 
 
 /*   <---- Tablet Ansicht: 768px ---->   */
