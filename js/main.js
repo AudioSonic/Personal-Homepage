@@ -7,4 +7,5 @@ async function loadComponent(path, elementId) {
 
 loadComponent("../html/components/header.html", "header");
 loadComponent("../html/components/footer.html","footer");
+loadComponent("../html/components/sidebar.html","sidebar");
 
