@@ -1,5 +1,9 @@
 /*   <---- Mobile Ansicht ---->   */
-
+#header{
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
 
 /*   <---- Tablet Ansicht: 768px ---->   */
 @media (min-width: 768px) {
