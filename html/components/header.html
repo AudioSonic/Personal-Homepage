@@ -1,13 +1,7 @@
-    <header class="header">
+<header class="header">
     <div class="container">
-
         <nav class="navigation">
-
-            <a href="index.html" class="navigation-logo">
-                Alex
-            </a>
-
-            <ul class="navigation-list">
+            <ul class="desktop-navigation">
 
                 <li class="navigation-item">
                     <a href="index.html" class="navigation-link">
@@ -41,14 +35,38 @@
 
             </ul>
 
-            <button class="navigation-toggle">
-                <span class="navigation-toggle-line"></span>
-                <span class="navigation-toggle-line"></span>
-                <span class="navigation-toggle-line"></span>
+            <button class="burger-menu" type="button" aria-label="Navigation offnen" aria-controls="mobile-navigation" aria-expanded="false">
+                <span class="burger-menu-line"></span>
+                <span class="burger-menu-line"></span>
+                <span class="burger-menu-line"></span>
             </button>
-
         </nav>
-
     </div>
 
-    </header>
+    <div class="mobile-navigation-overlay" data-mobile-nav-close></div>
+
+    <aside class="mobile-navigation" id="mobile-navigation" aria-hidden="true">
+        <button class="mobile-navigation-close" type="button" aria-label="Navigation schliessen" data-mobile-nav-close>
+            <span class="mobile-navigation-close-line"></span>
+            <span class="mobile-navigation-close-line"></span>
+        </button>
+
+        <ul class="mobile-navigation-list">
+            <li class="navigation-item">
+                <a href="index.html" class="navigation-link">Home</a>
+            </li>
+            <li class="navigation-item">
+                <a href="skills.html" class="navigation-link">Skills</a>
+            </li>
+            <li class="navigation-item">
+                <a href="projects.html" class="navigation-link">Projects</a>
+            </li>
+            <li class="navigation-item">
+                <a href="journey.html" class="navigation-link">Journey</a>
+            </li>
+            <li class="navigation-item">
+                <a href="contact.html" class="navigation-link">Contact</a>
+            </li>
+        </ul>
+    </aside>
+</header>

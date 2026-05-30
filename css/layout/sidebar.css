@@ -1,4 +1,16 @@
 #sidebar{
+    display: none;
+}
+
+#sidebar-mobile{
+    display: flex;
+}
+
+/*   <---- Desktop Ansicht: 1024px ---->   */
+@media (min-width: 1024px){
+
+    #sidebar{
+    display: block;
     height: 97vh;
     background-color: var(--color-surface);
     position: sticky;
@@ -8,7 +20,12 @@
     overflow-y: auto;
 }
 
-#sidebar img{
-    width: 200px;
-    height: 200px;
+    #sidebar img{
+        width: 200px;
+        height: 200px;
+    }
+
+    #sidebar-mobile{
+    display: none;
+    }
 }
