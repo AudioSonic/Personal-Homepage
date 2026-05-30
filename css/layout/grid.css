@@ -1,7 +1,8 @@
 /*   <---- Mobile Ansicht ---->   */
 .sidebar-grid{
-    display: grid;
-    grid-template-columns: minmax(250px, 350px) 1fr;
+    display: flex;
+    flex-direction: row;
+    width: auto;
 }
 
 
@@ -12,5 +13,8 @@
 
 /*   <---- Desktop Ansicht: 1024px ---->   */
 @media (min-width: 1024px){
-
+    .sidebar-grid{
+        display: grid;
+        grid-template-columns: minmax(250px, 350px) 1fr;
+    }
 }
