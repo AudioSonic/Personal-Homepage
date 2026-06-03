@@ -63,6 +63,47 @@ function initMobileNavigation() {
     });
 }
 
+function setActiveNavigationLink() {
+    const currentPage = window.location.pathname.split("/").pop() || "index.html";
+    const navigationLinks = document.querySelectorAll(".navigation-link");
+
+    navigationLinks.forEach((link) => {
+        const linkPage = new URL(link.getAttribute("href"), window.location.href).pathname.split("/").pop();
+
+        if (linkPage === currentPage) {
+            link.classList.add("navigation-link--active");
+            link.setAttribute("aria-current", "page");
+        }
+    });
+}
+
+function initThemeToggle() {
+    const themeToggle = document.querySelector(".theme-toggle");
+    const savedTheme = localStorage.getItem("theme");
+    const initialTheme = savedTheme || document.documentElement.dataset.theme || "dark";
+
+    document.documentElement.dataset.theme = initialTheme;
+
+    if (!themeToggle) {
+        return;
+    }
+
+    const updateThemeButtonLabel = () => {
+        const isLightTheme = document.documentElement.dataset.theme === "light";
+        themeToggle.setAttribute("aria-label", isLightTheme ? "Dark Mode aktivieren" : "Light Mode aktivieren");
+    };
+
+    themeToggle.addEventListener("click", () => {
+        const nextTheme = document.documentElement.dataset.theme === "light" ? "dark" : "light";
+
+        document.documentElement.dataset.theme = nextTheme;
+        localStorage.setItem("theme", nextTheme);
+        updateThemeButtonLabel();
+    });
+
+    updateThemeButtonLabel();
+}
+
 async function initComponents() {
     await Promise.all([
         loadComponent("../html/components/header.html", "header"),
@@ -72,6 +113,8 @@ async function initComponents() {
     ]);
 
     initMobileNavigation();
+    setActiveNavigationLink();
+    initThemeToggle();
 }
 
 initComponents();
