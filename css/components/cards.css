@@ -1,5 +1,12 @@
 /*   <---- Mobile Ansicht ---->   */
+.card{
+    border-radius: var(--radius-lg);
+    background-color: var(--color-surface);
+}
 
+.background-card{
+    margin: 20px;
+}
 
 /*   <---- Tablet Ansicht: 768px ---->   */
 @media (min-width: 768px) {

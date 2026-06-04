@@ -1,5 +1,7 @@
 /*   <---- Mobile Ansicht ---->   */
-
+#footer p{
+    margin-bottom: 7px;
+}
 
 /*   <---- Tablet Ansicht: 768px ---->   */
 @media (min-width: 768px) {
