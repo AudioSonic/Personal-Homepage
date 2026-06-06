@@ -16,5 +16,7 @@
     .sidebar-grid{
         display: grid;
         grid-template-columns: minmax(250px, 350px) 1fr;
+        height: 100vh;
+        overflow: hidden;
     }
 }

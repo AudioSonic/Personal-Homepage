@@ -1,11 +1,16 @@
 /*   <---- Mobile Ansicht ---->   */
-.card{
+.card {
     border-radius: var(--radius-lg);
     background-color: var(--color-surface);
+    border: 1px solid var(--color-border);
 }
 
 .background-card{
-    margin: 20px;
+    margin: 10px 8px 10px 8px;
+    background-image: url("../../assets/images/Background_Image.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    background-position:right;
 }
 
 /*   <---- Tablet Ansicht: 768px ---->   */
@@ -15,5 +20,23 @@
 
 /*   <---- Desktop Ansicht: 1024px ---->   */
 @media (min-width: 1024px){
+    body {
+        height: 100vh;
+        overflow: hidden;
+    }
+
+    aside,
+    .content-wrapper {
+        min-height: 0;
+    }
+
+    .background-card {
+        position: sticky;
+        top: 10px;
+
+        height: calc(100vh - 20px);
+        overflow-y: auto;
+        overflow-x: hidden;
+    }
 
 }
