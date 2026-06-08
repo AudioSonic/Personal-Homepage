@@ -7,10 +7,22 @@ body {
         color var(--transition-base);
 }
 
+aside{
+    display: none;
+}
+
 main {
     overflow: hidden;
 }
 
 section {
     padding-block: var(--spacing-xxl);
+}
+
+/*   <---- Desktop Ansicht: 1024px ---->   */
+@media (min-width: 1024px){
+aside{
+    display:block;
+}
+
 }

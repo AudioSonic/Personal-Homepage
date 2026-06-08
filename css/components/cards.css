@@ -7,7 +7,7 @@
 
 .background-card{
     margin: 10px 8px 10px 8px;
-    background-image: url("../../assets/images/Background_Image.png");
+    background-image: url("../../assets/images/Background_Sidebar.png");
     background-size:cover;
     background-repeat: no-repeat;
     background-position:right;
@@ -37,6 +37,8 @@
         height: calc(100vh - 20px);
         overflow-y: auto;
         overflow-x: hidden;
+
+        background-image: url("../../assets/images/Background_Image.png");
     }
 
 }
