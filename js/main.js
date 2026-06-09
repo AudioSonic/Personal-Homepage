@@ -1,3 +1,5 @@
+"use strict";
+
 async function loadComponent(path, elementId) {
     const element = document.getElementById(elementId);
 

@@ -16,7 +16,7 @@ main {
 }
 
 section {
-    padding-block: var(--spacing-xxl);
+    padding-block: var(--spacing-lg);
 }
 
 /*   <---- Desktop Ansicht: 1024px ---->   */

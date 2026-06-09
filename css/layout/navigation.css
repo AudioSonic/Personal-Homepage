@@ -255,7 +255,7 @@ body.mobile-navigation-open .mobile-navigation {
         display: flex;
         flex: 1 1 auto;
         align-items: stretch;
-        justify-content: center;
+        justify-content: start;
         gap: clamp(var(--spacing-sm), 3vw, var(--spacing-lg));
         height: 100%;
         margin: 0;

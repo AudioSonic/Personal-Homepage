@@ -6,4 +6,4 @@ export const skills = [
         level: 90
     }
 
-];
+];"use strict";
