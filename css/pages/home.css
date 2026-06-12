@@ -51,7 +51,8 @@
 }
 
 .home-showcase h1 span {
-    color: #7c4dff;
+    color: var(--color-primary-light);
+    text-shadow: 0 0 26px rgba(124, 77, 255, 0.22);
 }
 
 .home-showcase__text {
@@ -127,9 +128,16 @@
     background:
         linear-gradient(180deg, rgba(17, 24, 39, 0.92), rgba(12, 18, 31, 0.78));
     border-color: rgba(255, 255, 255, 0.12);
+    box-shadow: var(--shadow-surface-glow);
+}
+
+.expectation-card:hover,
+.expectation-card:focus-within {
+    transform: translateY(-3px);
+    border-color: rgba(159, 122, 234, 0.42);
     box-shadow:
-        inset 0 1px 0 rgba(255, 255, 255, 0.06),
-        0 18px 45px rgba(0, 0, 0, 0.16);
+        var(--shadow-surface-glow),
+        var(--shadow-glow-soft);
 }
 
 .expectation-card-icon {
@@ -137,10 +145,9 @@
     height: 48px;
     border-radius: 12px;
 
-    background:
-        linear-gradient(135deg, #7c4dff, #2563eb);
+    background: var(--gradient-accent);
     border-color: rgba(255, 255, 255, 0.16);
-    box-shadow: 0 12px 24px rgba(80, 52, 155, 0.28);
+    box-shadow: var(--shadow-glow-soft);
 }
 
 .expectation-card-icon img {
