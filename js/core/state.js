@@ -13,11 +13,31 @@ btGame.addEventListener("click", () => setActiveCategory("gamedev"));
 function setActiveCategory(category) {
     activeCategory = category;
 
-    console.log(getFilteredSkills());
+    renderSkills();
 }
 
 function getFilteredSkills() {
     return skills.filter(
         skill => skill.category === activeCategory
     );
+}
+
+console.log("Karte wird geladen");
+const skillsContainer = document.getElementById("skillsContainer");
+
+function renderSkills(){
+
+    skillsContainer.innerHTML = "";
+    const filteredSkills = getFilteredSkills();
+
+    filteredSkills.forEach(skill => {
+        const card = document.createElement("div");
+        card.innerHTML = `
+        <h2>${skill.name}</h2>
+        <p>${skill.description}</p>
+        `;
+        console.log("Karte erstellt");
+
+        skillsContainer.appendChild(card);
+    })
 }
