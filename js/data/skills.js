@@ -1,4 +1,4 @@
-const skills = [
+export const skills = [
     {
         id: 1,
         name: "HTML", 
@@ -106,5 +106,5 @@ const skills = [
                 completed: false
             }]
     },  
-    ]
+    ];
 

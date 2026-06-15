@@ -1,12 +1,23 @@
-"use strict";
+import { skills } from "../data/skills.js";
 
-export const state = {
+let activeCategory = "web";
 
-    currentTheme: "dark",
+const btWeb = document.getElementById("buttonWeb");
+const btSoftware = document.getElementById("buttonSoftware");
+const btGame = document.getElementById("buttonGameDev");
 
-    activeSkillTab: "frontend",
+btWeb.addEventListener("click", () => setActiveCategory("web"));
+btSoftware.addEventListener("click", () => setActiveCategory("software"));
+btGame.addEventListener("click", () => setActiveCategory("gamedev"));
 
-    currentProject: null,
+function setActiveCategory(category) {
+    activeCategory = category;
 
-    mobileMenuOpen: false
-};
+    console.log(getFilteredSkills());
+}
+
+function getFilteredSkills() {
+    return skills.filter(
+        skill => skill.category === activeCategory
+    );
+}
