@@ -1,5 +1,22 @@
 /*   <---- Mobile Ansicht ---->   */
+.page-header{
+    margin: 30px 10px 10px 80px;
+}
 
+.page-desc{
+    margin: 5px 10px 30px 80px;
+    color:var(--color-text-muted);
+    font-size: var(--font-size-md);
+    line-height: 1.75;
+}
+
+.data-overview{
+    margin: 0 80px 0 80px;
+    padding: 0px;
+    background-color: var(--color-surface);
+    display: flex;
+    border-radius: 10px;
+}
 
 /*   <---- Tablet Ansicht: 768px ---->   */
 @media (min-width: 768px) {

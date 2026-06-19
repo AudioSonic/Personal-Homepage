@@ -5,7 +5,7 @@ export const skills = [
         category: "web",
         description: "Basic HTML", 
         detailedDescription: "Erstellung semantischer Webseiten mit Fokus auf Struktur, Accessibility und SEO.",
-        image: "assets/images/html.png",
+        image: "../assets/logos/html_logo.png",
         skillList: [
             {
                 name: "Semantisches HTML",
@@ -23,7 +23,7 @@ export const skills = [
         category: "web",
         description: "Schöneres HTML", 
         detailedDescription: "Styling der HTML Seiten auf moderne Art und Weise",
-        image: "assets/images/html.png",
+        image: "../assets/logos/css_logo.png",
         skillList: [
             {
                 name: "Flex-Display",
@@ -41,7 +41,7 @@ export const skills = [
         category: "web",
         description: "Funktionales HTML", 
         detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "assets/images/html.png",
+        image: "../assets/logos/js_logo.png",
         skillList: [
             {
                 name: "Schleifen",
@@ -59,7 +59,7 @@ export const skills = [
         category: "software",
         description: "Objektorientierte Progammiersprache", 
         detailedDescription: "Programmiersprache aus dem .NET Framework",
-        image: "assets/images/html.png",
+        image: "../assets/logos/CSharp_logo.png",
         skillList: [
             {
                 name: "Foreach-Schleifen",
@@ -77,7 +77,7 @@ export const skills = [
         category: "software",
         description: "Windows Presentation Foundation", 
         detailedDescription: ".NET Framework zum erstellen von PC Anwendungen",
-        image: "assets/images/html.png",
+        image: "../assets/logos/wpf_logo.png",
         skillList: [
             {
                 name: "XAML Layouts",
@@ -95,7 +95,7 @@ export const skills = [
         category: "gamedev",
         description: "Game Development Engine", 
         detailedDescription: "Eine umfangreiche Engine zum erstellen von Spielen, Filmen nd weiteren Medienformen",
-        image: "assets/images/html.png",
+        image: "../assets/logos/unity_logo.png",
         skillList: [
             {
                 name: "Unity C#",
@@ -106,5 +106,188 @@ export const skills = [
                 completed: false
             }]
     },  
+
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+        {
+        id: 3,
+        name: "JavaScript", 
+        category: "web",
+        description: "Funktionales HTML", 
+        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
+        image: "../assets/logos/js_logo.png",
+        skillList: [
+            {
+                name: "Schleifen",
+                completed: false
+            }, 
+            {
+                name: "Dynamisches Karussell",
+                completed: false
+            }]
+    },  
+
+    
     ];
 

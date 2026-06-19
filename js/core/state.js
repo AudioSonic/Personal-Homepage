@@ -22,8 +22,12 @@ function getFilteredSkills() {
     );
 }
 
-console.log("Karte wird geladen");
+function calculateProgress(skill){
+    return 90;
+}
+
 const skillsContainer = document.getElementById("skillsContainer");
+
 
 function renderSkills(){
 
@@ -31,10 +35,29 @@ function renderSkills(){
     const filteredSkills = getFilteredSkills();
 
     filteredSkills.forEach(skill => {
+        const progress = calculateProgress(skill);
         const card = document.createElement("div");
         card.innerHTML = `
-        <h2>${skill.name}</h2>
-        <p>${skill.description}</p>
+        <div class="card skill-card">
+            <div class="skill-card-upper-section">
+                <div>
+                    <img src=${skill.image} alt=${skill.name}>
+                </div>
+
+                <div class="skill-card-progressbar">
+                    <div class="skill-card-progress-desc">
+                        <h3>${skill.name}</h3>
+                        <label>${progress}%</label>
+                    </div>
+                    <progress class="skill-card__progress" value="90" max="100"></progress>
+                </div>
+            </div>
+                
+            <div>
+                <p>${skill.description}</p>
+            </div>
+        </div>
+
         `;
         console.log("Karte erstellt");
 
