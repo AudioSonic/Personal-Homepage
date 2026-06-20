@@ -6,11 +6,20 @@ const btWeb = document.getElementById("buttonWeb");
 const btSoftware = document.getElementById("buttonSoftware");
 const btGame = document.getElementById("buttonGameDev");
 
-btWeb.addEventListener("click", () => setActiveCategory("web"));
-btSoftware.addEventListener("click", () => setActiveCategory("software"));
-btGame.addEventListener("click", () => setActiveCategory("gamedev"));
+btWeb.addEventListener("click", () => setActiveCategory("web", btWeb));
+btSoftware.addEventListener("click", () => setActiveCategory("software", btSoftware));
+btGame.addEventListener("click", () => setActiveCategory("gamedev", btGame));
 
-function setActiveCategory(category) {
+function setActiveCategory(category, button) {
+
+    document
+        .querySelectorAll(".tab-button")
+        .forEach(btn => 
+            btn.classList.remove("tab-button--active")
+        );
+        
+    button.classList.add("tab-button--active");
+
     activeCategory = category;
 
     renderSkills();
@@ -53,7 +62,7 @@ function renderSkills(){
                 </div>
             </div>
                 
-            <div>
+            <div class="skill-desc">
                 <p>${skill.description}</p>
             </div>
         </div>

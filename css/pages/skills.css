@@ -11,11 +11,16 @@
 }
 
 .data-overview{
-    margin: 0 80px 0 80px;
     padding: 0px;
     background-color: var(--color-surface);
     display: flex;
     border-radius: 10px;
+    align-items: center;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    white-space: nowrap;
 }
 
 /*   <---- Tablet Ansicht: 768px ---->   */

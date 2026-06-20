@@ -80,14 +80,17 @@
 
 .tab-button{
     flex: 1;
+    min-width: 170px;
     display: flex;
-    justify-content: center;
     gap: 10px;
-    background: var(--gradient-accent);
     border: 1px solid rgba(255, 255, 255, 0.18);
     border-radius: 10px;
     box-shadow: var(--shadow-glow-interactive);
     height: 3.5rem;
+}
+
+.tab-button--active{
+    background: var(--gradient-accent);
 }
 
 /*   <---- Tablet Ansicht: 768px ---->   */
