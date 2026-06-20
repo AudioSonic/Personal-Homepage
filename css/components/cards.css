@@ -52,7 +52,7 @@
 .skill-card{
     padding: 20px;
     width: 300px;
-    height: 130px;
+    height: 85px;
     display: flex;
     flex-direction: column;
     box-shadow: var(--shadow-glow-interactive);
@@ -79,7 +79,6 @@
 .skill-card-upper-section{
     display: flex;
     gap:15px;
-
 }
 
 .skill-card-progressbar{
@@ -105,7 +104,11 @@
     display: flex;
     gap: 12px;
     flex-wrap: wrap;
-    margin: 0 0px 0 80px;
+    justify-content: center;
+}
+
+.skill-desc{
+    display: none;
 }
 
 /*   <---- Tablet Ansicht: 768px ---->   */
@@ -135,5 +138,28 @@
 
         background-image: url("../../assets/images/Background_Image.png");
     }
+    
+    .skill-card{
+        padding: 20px;
+        width: 300px;
+        height: 130px;
+        display: flex;
+        flex-direction: column;
+        box-shadow: var(--shadow-glow-interactive);
 
+            transition:
+            transform var(--transition-fast),
+            border-color var(--transition-fast),
+            background-color var(--transition-fast),
+            box-shadow var(--transition-fast);
+    }
+
+        #skillsContainer{
+        margin-left: 80px;
+        justify-content: start;
+    }
+
+    .skill-desc{
+    display: block;
+}
 }
