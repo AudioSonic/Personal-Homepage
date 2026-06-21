@@ -29,6 +29,14 @@ export const skills = [
                 name: "Flex-Display",
                 completed: false
             }, 
+                        {
+                name: "Schleifen",
+                completed: false
+            },
+                        {
+                name: "Schleifen",
+                completed: false
+            },
             {
                 name: "Hover-Effekte",
                 completed: true
@@ -46,7 +54,16 @@ export const skills = [
             {
                 name: "Schleifen",
                 completed: false
+            },
+                        {
+                name: "Schleifen",
+                completed: false
             }, 
+                        {
+                name: "Schleifen",
+                completed: false
+            },
+
             {
                 name: "Dynamisches Karussell",
                 completed: false
@@ -101,193 +118,22 @@ export const skills = [
                 name: "Unity C#",
                 completed: false
             }, 
+                        {
+                name: "Unity C#",
+                completed: true
+            }, 
+                        {
+                name: "Unity C#",
+                completed: true
+            }, 
+                        {
+                name: "Unity C#",
+                completed: true
+            }, 
             {
                 name: "Animator",
                 completed: false
             }]
     },  
-
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-        {
-        id: 3,
-        name: "JavaScript", 
-        category: "web",
-        description: "Funktionales HTML", 
-        detailedDescription: "Hinzufügen von Funktion und Logik auf der Webseite",
-        image: "../assets/logos/js_logo.png",
-        skillList: [
-            {
-                name: "Schleifen",
-                completed: false
-            }, 
-            {
-                name: "Dynamisches Karussell",
-                completed: false
-            }]
-    },  
-
-    
     ];
 
