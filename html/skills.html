@@ -22,37 +22,37 @@
         <div class="content-wrapper">
             <div class="card background-card">
                 <div id="header"></div>
-                <main>
+                <main class="skills-page">
                     <div id="sidebar-mobile"></div>
-                    <h1 class="page-header">Meine <span style="color: var(--color-primary-light);">Skills</span></h1>
+                    <div class="skills-page__content">
+                        <h1 class="page-header">Meine <span>Skills</span></h1>
 
-                    <p class="page-desc">
-                        Hier findest du eine Übersicht meiner technischen Fähigkeiten<br>
-                        und Tools, mit denen ich arbeite.
-                    </p>
+                        <p class="page-desc">
+                            Hier findest du eine Übersicht meiner technischen Fähigkeiten und Tools,
+                            mit denen ich arbeite.
+                        </p>
 
-                    <section class="data-overview">
-                        <button id="buttonWeb" class="button tab-button">
-                            <img src="../assets/icons/icon_globe.svg">
-                            Web
-                        </button>
-                        <button id="buttonSoftware" class="button tab-button">
-                            <img src="../assets/icons/icon_terminal.svg">
-                            Software
-                        </button>
-                        <button id="buttonGameDev" class="button tab-button">
-                            <img src="../assets/icons/icon_controller.svg">
-                            GameDev
-                        </button>
-                    </section>
-                    <section id="skillsContainer">
-                    </section>
+                        <section class="data-overview" aria-label="Skill Kategorien">
+                            <button id="buttonWeb" class="button tab-button" type="button" data-skill-category="web">
+                                <img src="../assets/icons/icon_globe.svg" alt="">
+                                Web
+                            </button>
+                            <button id="buttonSoftware" class="button tab-button" type="button" data-skill-category="software">
+                                <img src="../assets/icons/icon_terminal.svg" alt="">
+                                Software
+                            </button>
+                            <button id="buttonGameDev" class="button tab-button" type="button" data-skill-category="gamedev">
+                                <img src="../assets/icons/icon_controller.svg" alt="">
+                                GameDev
+                            </button>
+                        </section>
+                        <section id="skillsContainer" aria-live="polite"></section>
+                    </div>
                 </main>
             </div>
         </div>
     </div>
-<script type="module" src="../js/core/state.js"></script>
-<script type="module" src="../js/pages/skills.js"></script>
+    <script type="module" src="../js/pages/skills.js"></script>
 </body>
 
 </html>
