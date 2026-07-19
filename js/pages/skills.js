@@ -85,8 +85,8 @@ function createSkillCard(skill) {
     description.textContent = skill.description;
 
     iconWrapper.appendChild(icon);
-    progressHeader.append(title, progressLabel);
-    progressWrapper.append(progressHeader, progressBar);
+    progressHeader.append(title/*, progressLabel*/);
+    progressWrapper.append(progressHeader/*, progressBar*/);
     upperSection.append(iconWrapper, progressWrapper);
     descriptionWrapper.appendChild(description);
     card.append(upperSection, descriptionWrapper);

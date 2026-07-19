@@ -146,7 +146,14 @@
 }
 
 .skill-desc{
-    display: none;
+    display: block;
+}
+
+.skill-desc p{
+    margin: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    line-height: 1.55;
 }
 
 /*   <---- Tablet Ansicht: 768px ---->   */
@@ -181,14 +188,4 @@
         min-height: 142px;
     }
 
-    .skill-desc{
-        display: block;
-    }
-
-    .skill-desc p{
-        margin: 0;
-        color: var(--color-text-muted);
-        font-size: var(--font-size-sm);
-        line-height: 1.55;
-    }
 }
