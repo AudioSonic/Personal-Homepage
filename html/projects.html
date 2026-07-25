@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- JavaScript -->
-    <script src="../js/main.js" defer></script>
+    <script type="module" src="../js/main.js"></script>
 </head>
 
 <body>
@@ -27,69 +27,33 @@
                     <h1 class="page-header">Meine <span style="color: var(--color-primary-light);">Projekte</span></h1>
 
                     <p class="page-desc">
-                        Hier findest du eine Übersicht meiner technischen Fähigkeiten<br>
-                        und Tools, mit denen ich arbeite.
+                        Hier findest du eine Übersicht meiner Projekte im privaten sowie im beruflichen Rahmen.
                     </p>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+
+                    <section class="data-overview" aria-label="Skill Kategorien">
+                            <button class="button-private-projects" class="button tab-button" type="button" data-skill-category="web">
+                                <img src="../assets/icons/icon_globe.svg" alt="">
+                                Private Projekte
+                            </button>
+                            <button class="button-professional-projects" class="button tab-button" type="button" data-skill-category="software">
+                                <img src="../assets/icons/icon_terminal.svg" alt="">
+                                Berufliche Projekte
+                            </button>
+                        </section>
+
+                        <label for="project-filter">Filter</label>
+                        <select class="project-filter">
+                            <option value="web">Nur Webprojekte</option>
+                            <option value="web">Nur Softwareprojekte</option>
+                            <option value="web">Nur Spielprojekte</option>    
+                        </select>
+
+                    <section id="project-container" aria-live="polite"></section>
                 </main>
-                <div id="footer"></div>
+                <div class="footer"></div>
             </div>
         </div>
     </div>
-    
 </body>
 
 </html>

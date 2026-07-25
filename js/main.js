@@ -1,4 +1,4 @@
-"use strict";
+import { createProjectCards } from "./pages/projects.js";
 
 async function loadComponent(path, elementId) {
     const element = document.getElementById(elementId);
@@ -106,6 +106,16 @@ function initThemeToggle() {
     updateThemeButtonLabel();
 }
 
+function initProjects(){
+    const projectContainer = document.getElementById("project-container");
+
+    if (!projectContainer) {
+        return;
+    }
+
+    projectContainer.replaceChildren(...createProjectCards());
+}
+
 async function initComponents() {
     await Promise.all([
         loadComponent("../html/components/header.html", "header"),
@@ -117,6 +127,7 @@ async function initComponents() {
     initMobileNavigation();
     setActiveNavigationLink();
     initThemeToggle();
+    initProjects();
 }
 
 initComponents();

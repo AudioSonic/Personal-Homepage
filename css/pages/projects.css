@@ -1,5 +1,112 @@
 /*   <---- Mobile Ansicht ---->   */
+.project-card {
+    background-color: red;
+    max-width: 350px;
+    border-radius: 10px;
+    overflow: hidden;
+}
 
+.project-header {
+    position: relative;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: flex-start;
+}
+
+.project-footer{
+    padding: 10px;
+}
+
+.project-screenshot {
+    display: block;
+    width: 100%;
+    height: 170px;
+    object-fit: cover;
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+.project-github-link img{
+    width: 20px;
+    height: 20px;
+}
+
+.project-title-and-status{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    text-align: center;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.project-skill{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    border-radius: 9px;
+    gap: 7px;
+    padding: 7px 10px 7px 10px;
+    background-color: blue;
+}
+
+.project-skill img{
+    width: 20px;
+    height: 20px;
+}
+
+.project-skills-overview{
+    display: flex;
+    gap: 3px;
+}
+
+.additional-skill-counter{
+    background-color: blue;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 9px;
+    width: fit-content;
+    padding: 0px 7px 0px 7px;
+}
+
+.project-status{
+    background-color: green;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.project-type {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(128, 128, 128, 0.75);
+    border-radius: 15px;
+    padding: 7px;
+}
+
+.project-github-link {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: black;
+    border-radius: 99px;
+    padding: 10px;
+    border-color: white;
+}
+
+.project-hr{
+    width: 100%;
+    height: 0.1px;
+    color: lightgrey;
+}
 
 /*   <---- Tablet Ansicht: 768px ---->   */
 @media (min-width: 768px) {
