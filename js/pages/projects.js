@@ -1,4 +1,32 @@
+import { initCategoryFilter } from "./helper.js";
 import { projects } from "../data/projects.js";
+
+const DEFAULT_CATEGORY = "personal";
+let activeCategory = DEFAULT_CATEGORY;
+const projectContainer = document.getElementById("project-container");
+const categoryButtons = document.querySelectorAll("[data-category]");
+
+function initProjectsPage() {
+    if (!projectContainer) {
+        return;
+    }
+
+    initCategoryFilter(categoryButtons, DEFAULT_CATEGORY, setActiveCategory);
+}
+
+function setActiveCategory(category) {
+    activeCategory = category;
+    renderProjects();
+}
+
+function getFilteredProjects() {
+    return projects.filter((project) => project.category === activeCategory);
+}
+
+function renderProjects() {
+    projectContainer.replaceChildren(...getFilteredProjects().map(createProjectCard));
+}
+
 
 const projectTypeLabels = {
     web: "Web App",
@@ -23,7 +51,7 @@ const technologyIcons = {
 };
 
 export function createProjectCards(){
-    return projects.map((project) => createProjectCard(project));
+    return getFilteredProjects().map((project) => createProjectCard(project));
 }
 
 export function createProjectCard(project){
@@ -59,7 +87,7 @@ export function createProjectCard(project){
     status.textContent = projectStatusLabels[project.status] || project.status;
     projectDesc.textContent = project.shortDescription;
     additionalSkillCounter.textContent = `+${additionalTechnologies}`;
-    additionalDetailsButton.textContent = "Details ansehen ->";
+    additionalDetailsButton.textContent = "Details ansehen ➜";
 
     projectCard.classList.add("project-card");
     header.classList.add("project-header");
@@ -69,6 +97,7 @@ export function createProjectCard(project){
     projectType.classList.add("project-type");
     gitHubLink.classList.add("project-github-link");
     projectSkills.classList.add("project-skills-overview");
+    additionalSkillCounter.classList.add("project-skill");
     additionalSkillCounter.classList.add("additional-skill-counter");
     titleAndStatus.classList.add("project-title-and-status");
     status.classList.add("project-status");
@@ -120,3 +149,5 @@ function getProjectImage(project){
 
     return "../assets/screenshots/ApplyHQ_Screenshot_1.png";
 }
+
+initProjectsPage();

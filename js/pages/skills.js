@@ -1,38 +1,18 @@
+import { initCategoryFilter } from "./helper.js";
 import { skills } from "../data/skills.js";
 
-const DEFAULT_CATEGORY = "web";
-
-let activeCategory = DEFAULT_CATEGORY;
+let activeCategory = "web";
 
 const skillsContainer = document.getElementById("skillsContainer");
-const categoryButtons = document.querySelectorAll("[data-skill-category]");
+const categoryButtons = document.querySelectorAll("[data-category]");
 
-function initSkillsPage() {
-    if (!skillsContainer || categoryButtons.length === 0) {
-        return;
-    }
-
-    categoryButtons.forEach((button) => {
-        button.addEventListener("click", () => {
-            setActiveCategory(button.dataset.skillCategory);
-        });
+if (skillsContainer) {
+    initCategoryFilter(categoryButtons, activeCategory, (category) => {
+        activeCategory = category;
+        renderSkills();
     });
-
-    setActiveCategory(DEFAULT_CATEGORY);
 }
 
-function setActiveCategory(category) {
-    activeCategory = category;
-
-    categoryButtons.forEach((button) => {
-        const isActive = button.dataset.skillCategory === activeCategory;
-
-        button.classList.toggle("tab-button--active", isActive);
-        button.setAttribute("aria-pressed", String(isActive));
-    });
-
-    renderSkills();
-}
 
 function getFilteredSkills() {
     return skills.filter((skill) => skill.category === activeCategory);
@@ -99,5 +79,3 @@ function renderSkills() {
 
     skillsContainer.replaceChildren(...filteredSkills.map(createSkillCard));
 }
-
-initSkillsPage();
