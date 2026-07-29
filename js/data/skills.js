@@ -257,6 +257,25 @@ export const skills = [
         detailedDescription: "Planung und Organisation von Projekten nach der Kanban-Methode.",
         image: "../assets/logos/kanban_logo.png",
         skillList: []
-    }
+    },
+    {
+        id: 27,
+        name: "List & Label",
+        category: "software",
+        description: "Ein professionelles Reporting-Tool",
+        detailedDescription: "Ein professionelles Reporting-Tool zur Erstellung individueller Berichte, Formulare und Druckvorlagen, das ich im beruflichen Umfeld zur Datenaufbereitung und Dokumentenerstellung einsetze.",
+        image: "../assets/logos/List_and_Label_logo.png",
+        skillList: []
+    },
+        {
+        id: 28,
+        name: "Git Extensions",
+        category: "tools",
+        description: "Verwaltung von Versionskontrolle",
+        detailedDescription: "Ein Git-Client zur visuellen Verwaltung von Versionskontrolle, den ich zur Organisation von Commits, Branches und Repository-Verläufen in meinen Projekten verwende.",
+        image: "../assets/logos/git_extensions_logo.png",
+        skillList: []
+    },
+
 ];
 
