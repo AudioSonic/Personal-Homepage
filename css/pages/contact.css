@@ -21,6 +21,17 @@ main { padding: 1.5rem 1rem 2rem; }
 .contact-submit img { width: 1.1rem; margin-right: .5rem; }
 .contact-response-card { margin-top: 1rem; }
 .sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.contact-modal[hidden] { display: none; }
+.contact-modal { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 1rem; }
+.contact-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.72); backdrop-filter: blur(5px); }
+.contact-modal-card { position: relative; width: min(100%, 30rem); padding: 2rem; text-align: center; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-glow); }
+.contact-modal-card .contact-detail-icon { margin: 0 auto 1rem; }
+.contact-modal-card h2 { margin-bottom: .75rem; }
+.contact-modal-card p { line-height: 1.7; }
+.contact-modal-card a { color: var(--color-primary-light); font-weight: 700; }
+.contact-modal-card .cta-button { margin-top: 1rem; }
+.contact-modal-close { position: absolute; top: .65rem; right: .85rem; color: var(--color-text-muted); background: transparent; border: 0; font-size: 1.7rem; cursor: pointer; }
+.contact-modal-open { overflow: hidden; }
 @media (min-width: 1024px) {
     main { padding: 2.5rem 4rem; }
     .contact-layout { grid-template-columns: minmax(280px, .9fr) minmax(420px, 1.1fr); align-items: start; gap: 3.5rem; }

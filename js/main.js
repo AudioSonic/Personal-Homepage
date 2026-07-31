@@ -1,4 +1,5 @@
 import { createProjectCards } from "./pages/projects.js";
+import { initContactForm } from "./pages/contact.js";
 
 async function loadComponent(path, elementId) {
     const element = document.getElementById(elementId);
@@ -128,6 +129,7 @@ async function initComponents() {
     setActiveNavigationLink();
     initThemeToggle();
     initProjects();
+    initContactForm();
 }
 
 initComponents();
