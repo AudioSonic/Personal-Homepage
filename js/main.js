@@ -1,4 +1,4 @@
-import { createProjectCard } from "./pages/projects.js";
+import { createProjectCards } from "./pages/projects.js";
 
 async function loadComponent(path, elementId) {
     const element = document.getElementById(elementId);
@@ -108,8 +108,12 @@ function initThemeToggle() {
 
 function initProjects(){
     const projectContainer = document.getElementById("project-container");
-    const project = createProjectCard();
-    projectContainer.append(project);
+
+    if (!projectContainer) {
+        return;
+    }
+
+    projectContainer.replaceChildren(...createProjectCards());
 }
 
 async function initComponents() {
