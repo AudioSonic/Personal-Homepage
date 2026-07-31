@@ -1,12 +1,43 @@
-/*   <---- Mobile Ansicht ---->   */
-
-
-/*   <---- Tablet Ansicht: 768px ---->   */
-@media (min-width: 768px) {
-
-}
-
-/*   <---- Desktop Ansicht: 1024px ---->   */
-@media (min-width: 1024px){
-
+main { padding: 1.5rem 1rem 2rem; }
+.contact-layout { display: grid; gap: 2rem; }
+.contact-intro h1 { font-size: clamp(2.2rem, 6vw, 2rem); }
+.contact-intro h1 span, .contact-form-card h2 span { color: var(--color-primary-light); }
+.contact-intro > p { max-width: 34rem; line-height: 1.7; }
+.contact-details { display: grid; gap: .8rem; margin-top: 2rem; }
+.contact-detail-card, .contact-response-card { display: flex; align-items: center; gap: 1rem; padding: 10px 15px 10px 15px; background: var(--color-surface-raised); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.contact-detail-icon { flex: 0 0 2.8rem; width: 2.8rem; height: 2.8rem; display: grid; place-items: center; background: var(--gradient-accent); border-radius: .75rem; }
+.contact-detail-icon img { width: 1.35rem; height: 1.35rem; }
+.contact-detail-card strong, .contact-response-card strong { display: block; }
+.contact-detail-card p, .contact-response-card p { margin: .3rem 0 0; font-size: var(--font-size-sm); }
+.contact-form-card { padding: 1.2rem; background: var(--color-surface-raised); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.contact-form-card h2 { display: flex; align-items: center; gap: .55rem; font-size: var(--font-size-lg); }
+.contact-form { display: grid; gap: 1rem; margin-top: 1.3rem; }
+.contact-form-row { display: grid; gap: 1rem; }
+.contact-form label { display: flex; align-items: flex-start; gap: .7rem; padding: .9rem 1rem; border: 1px solid var(--color-border); border-radius: .7rem; background: var(--color-surface-soft); }
+.contact-form label img { width: 1.2rem; height: 1.2rem; margin-top: .15rem; }
+.contact-form input, .contact-form textarea { width: 100%; color: var(--color-text); background: transparent; border: 0; outline: 0; font: inherit; }
+.contact-form textarea { min-height: 10rem; resize: vertical; }
+.contact-submit { width: 100%; border: 0; cursor: pointer; }
+.contact-submit img { width: 1.1rem; margin-right: .5rem; }
+.contact-response-card { margin-top: 1rem; }
+.sr-only { position: absolute; width: 1px; height: 1px; overflow: hidden; clip: rect(0,0,0,0); }
+.contact-modal[hidden] { display: none; }
+.contact-modal { position: fixed; inset: 0; z-index: 20; display: grid; place-items: center; padding: 1rem; }
+.contact-modal-backdrop { position: absolute; inset: 0; background: rgba(0,0,0,.72); backdrop-filter: blur(5px); }
+.contact-modal-card { position: relative; width: min(100%, 30rem); padding: 2rem; text-align: center; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-glow); }
+.contact-modal-card .contact-detail-icon { margin: 0 auto 1rem; }
+.contact-modal-card h2 { margin-bottom: .75rem; }
+.contact-modal-card p { line-height: 1.7; }
+.contact-modal-card a { color: var(--color-primary-light); font-weight: 700; }
+.contact-modal-card .cta-button { margin-top: 1rem; }
+.contact-modal-close { position: absolute; top: .65rem; right: .85rem; color: var(--color-text-muted); background: transparent; border: 0; font-size: 1.7rem; cursor: pointer; }
+.contact-modal-open { overflow: hidden; }
+@media (min-width: 1024px) {
+    main { padding: 2.5rem 4rem; }
+    .contact-layout { grid-template-columns: minmax(280px, .9fr) minmax(420px, 1.1fr); align-items: start; gap: 3.5rem; }
+    .contact-intro { display: flex; flex-direction: column; min-height: 100%; }
+    .contact-details { flex: 1; grid-template-rows: repeat(3, minmax(0, 1fr)); }
+    .contact-detail-card { min-height: 86px; }
+    .contact-form-row { grid-template-columns: 1fr 1fr; }
+    .contact-response-card { grid-column: 2; grid-row: 2; margin-top: -1rem; }
 }

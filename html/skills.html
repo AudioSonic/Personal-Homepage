@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="../css/main.css">
 
     <!-- JavaScript -->
-    <script src="../js/main.js" defer></script>
+    <script type="module" src="../js/main.js"></script>
 </head>
 
 <body>
@@ -22,69 +22,82 @@
         <div class="content-wrapper">
             <div class="card background-card">
                 <div id="header"></div>
-                <main>
+                <main class="skills-page">
                     <div id="sidebar-mobile"></div>
-                    <h1>Skills</h1>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+                    <div class="skills-page__content">
+                        <h1 class="page-header">Meine <span>Skills</span></h1>
+
+                        <p class="page-desc">
+                            Hier findest du eine Übersicht meiner technischen Fähigkeiten und Tools,
+                            mit denen ich arbeite.
+                        </p>
+
+                        <section class="data-overview" aria-label="Skill Kategorien">
+                            <button id="buttonWeb" class="button tab-button" type="button" data-category="web">
+                                <img src="../assets/icons/icon_globe.svg" alt="">
+                                Web
+                            </button>
+                            <button id="buttonSoftware" class="button tab-button" type="button" data-category="software">
+                                <img src="../assets/icons/icon_terminal.svg" alt="">
+                                Software
+                            </button>
+                            <button id="buttonGameDev" class="button tab-button" type="button" data-category="gamedev">
+                                <img src="../assets/icons/icon_controller.svg" alt="">
+                                GameDev
+                            </button>
+                            <button id="buttonTools" class="button tab-button" type="button" data-category="tools">
+                                <img src="../assets/icons/icon_gears.svg" alt="">
+                                Tools
+                            </button>
+                        </section>
+                        <section id="skillsContainer" aria-live="polite"></section>
+                    </div>
                 </main>
-                <div id="footer"></div>
             </div>
         </div>
     </div>
-    
+    <div id="skillModal" class="skill-modal" hidden>
+        <div class="skill-modal__backdrop" data-modal-close></div>
+        <section class="skill-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="skillModalTitle">
+            <button class="skill-modal__close" type="button" aria-label="Skill-Details schließen" data-modal-close>
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="skill-modal__header">
+                <div class="skill-modal__icon">
+                    <img id="skillModalImage" src="" alt="">
+                </div>
+                <h2 id="skillModalTitle"></h2>
+            </div>
+            <div class="skill-modal__content">
+                <h3>Beschreibung</h3>
+                <p id="skillModalDescription"></p>
+                <h3>Highlights</h3>
+                <ul id="skillModalHighlights"></ul>
+                <h3>Projekte</h3>
+                <div id="skillModalProjects" class="skill-modal__projects"></div>
+            </div>
+        </section>
+    </div>
+    <div id="projectModal" class="project-modal" hidden>
+        <div class="project-modal__backdrop" data-project-modal-close></div>
+        <section class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+            <button class="project-modal__close" type="button" aria-label="Projekt-Details schließen" data-project-modal-close><span aria-hidden="true">×</span></button>
+            <div class="project-modal__header"><h2 id="projectModalTitle"></h2><span id="projectModalStatus" class="project-status"></span></div>
+            <div class="project-modal__carousel" aria-label="Projekt-Screenshots">
+                <button class="project-modal__carousel-button project-modal__carousel-button--previous" type="button" aria-label="Vorheriger Screenshot">&#8249;</button>
+                <img id="projectModalScreenshot" class="project-modal__screenshot" src="" alt="">
+                <button class="project-modal__carousel-button project-modal__carousel-button--next" type="button" aria-label="Nächster Screenshot">&#8250;</button>
+            </div>
+            <div class="project-modal__content">
+                <section class="project-modal__section"><h3>Beschreibung</h3><p id="projectModalDescription"></p></section>
+                <section class="project-modal__section"><h3>Highlights</h3><ul id="projectModalHighlights"></ul></section>
+                <section class="project-modal__section"><h3>Technologien</h3><div id="projectModalTechnologies" class="project-modal__technologies"></div></section>
+                <p id="projectModalPeriod" class="project-modal__period"></p>
+                <div id="projectModalLinks" class="project-modal__links"></div>
+            </div>
+        </section>
+    </div>
+    <script type="module" src="../js/pages/skills.js"></script>
 </body>
 
 </html>

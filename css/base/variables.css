@@ -1,4 +1,6 @@
 :root, [data-theme="dark"] {
+    --background-image: url("../../assets/images/Background_Image_dark.png");
+    --background-sidebar: url("../../assets/images/Background_Sidebar_dark.png");
 
     /* ============================= */
     /* Colors */
@@ -6,6 +8,8 @@
 
     --color-background: #050816;
     --color-surface: #111827;
+    --color-surface-raised: #172033;
+    --color-surface-soft: rgba(255, 255, 255, 0.06);
 
     --color-primary: #50349b;
     --color-primary-light: #9f7aea;
@@ -123,14 +127,20 @@
 }
 
 [data-theme="light"] {
+    --background-image: url("../../assets/images/Background_Image_light.png");
+    --background-sidebar: url("../../assets/images/Background_Sidebar_light.png");
 
     --color-background: #f8fafc;
     --color-surface: #ffffff;
+    --color-surface-raised: #ffffff;
+    --color-surface-soft: #f1f5f9;
 
     --color-text: #111827;
     --color-text-muted: #4b5563;
 
     --color-primary: #7c4dff;
+    --color-primary-light: #6d3fe0;
+    --color-border: rgba(15, 23, 42, 0.14);
 
     --glow-primary: rgba(124, 77, 255, 0.22);
     --glow-primary-soft: rgba(124, 77, 255, 0.1);

@@ -1,12 +1,276 @@
 /*   <---- Mobile Ansicht ---->   */
+.projects-page {
+    --project-grid-width: 100%;
+    width: 100%;
+    max-width: var(--container-width);
+    margin-inline: auto;
+    padding: 28px var(--spacing-md) 36px;
+}
 
+.projects-page .data-overview {
+    width: min(100%, var(--project-grid-width));
+    margin-bottom: 30px;
+}
+
+.projects-page .page-desc {
+    max-width: 680px;
+}
+
+.category-label--short {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .category-label--long {
+        display: none;
+    }
+
+    .category-label--short {
+        display: inline;
+    }
+}
+
+.project-card {
+    background-color: var(--color-surface);
+    width: 100%;
+    max-width: none;
+    border-radius: 10px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+
+    box-shadow: var(--shadow-glow-interactive);
+
+    transition:
+        transform var(--transition-fast),
+        border-color var(--transition-fast),
+        background-color var(--transition-fast),
+        box-shadow var(--transition-fast);
+}
+
+.project-card:hover,
+.project-card:focus-visible {
+    transform: translateY(-2px);
+    border-color: rgba(255, 255, 255, 0.28);
+    box-shadow: var(--shadow-glow-interactive-hover);
+}
+
+.project-header {
+    position: relative;
+}
+
+.project-content{
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    padding: 10px;
+    align-items: flex-start;
+    flex: 1;
+    width: 100%;
+}
+
+.project-footer{
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    margin-top: auto;
+    min-height: 42px;
+}
+
+.project-footer button{
+    color: var(--color-primary-light);
+    height: 100%;
+}
+
+.project-screenshot {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    height: auto;
+    object-fit: cover;
+    border-radius: 0;
+}
+
+.project-github-link img{
+    width: 20px;
+    height: 20px;
+}
+
+.project-title-and-status{
+    display: flex;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 10px;
+    text-align: left;
+    width: 100%;
+    margin-bottom: 3px;
+}
+
+.project-title-and-status h2 {
+    text-align: left;
+    flex: 1;
+    min-width: 0;
+    line-height: 1.15;
+}
+
+.project-description {
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+    -webkit-line-clamp: 4;
+    line-clamp: 4;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    text-align: left;
+    flex: 1;
+    width: 100%;
+    min-height: 3.2em;
+    line-height: 1.6;
+    margin: 0;
+}
+
+.project-skill {
+    display: flex;
+    flex: 0 0 auto;
+    justify-content: center;
+    align-items: center;
+    width: fit-content;
+    gap: 7px;
+    padding: 7px 10px;
+
+    background-color: var(--color-surface);
+    border: 2px solid var(--color-border);
+    box-shadow: 0 2px 5px rgba(243, 242, 242, 0.1);
+    border-radius: 9px;
+}
+
+.project-skill:hover {
+    transform: translateY(-2px);
+    border-color: rgba(124, 92, 255, 0.35);
+}
+
+.project-skill img{
+    width: 20px;
+    height: 20px;
+}
+
+.project-skills-overview{
+    display: flex;
+    gap: 3px;
+    width: 100%;
+    min-width: 0;
+    overflow: hidden;
+    flex-wrap: nowrap;
+    padding-top: 3px;
+    margin-top: auto;
+}
+
+.additional-skill-counter{
+    width: fit-content;
+    padding: 0px 7px 0px 7px;
+}
+
+.project-status{
+    flex: 0 0 auto;
+    max-width: 120px;
+    text-align: center;
+    border-radius: 15px;
+    padding: 5px;
+    font-size: 12px;
+}
+
+.project-status--inProgress {
+    background-color: #facc15;
+    color: #422006;
+}
+
+.project-status--completed {
+    background-color: #22c55e;
+    color: #052e16;
+}
+
+.project-skill--interactive { cursor: pointer; }
+
+.project-modal[hidden] { display: none; }
+.project-modal { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 1rem; }
+.project-modal__backdrop { position: absolute; inset: 0; background: rgba(0, 0, 0, .72); backdrop-filter: blur(5px); }
+.project-modal__dialog { position: relative; width: min(100%, 52rem); max-height: 90vh; overflow: auto; padding: 2rem; background: var(--color-surface); border: 1px solid var(--color-border); border-radius: var(--radius-lg); box-shadow: var(--shadow-glow); }
+.project-modal__close { position: absolute; top: .65rem; right: .85rem; color: var(--color-text-muted); background: transparent; border: 0; font-size: 1.7rem; cursor: pointer; }
+.project-modal__header { display: flex; align-items: flex-start; justify-content: space-between; gap: 1rem; padding-right: 1.5rem; }
+.project-modal__header h2 { margin: 0; line-height: 1.15; }
+.project-modal__carousel { position: relative; display: flex; align-items: center; justify-content: center; width: 100%; height: min(45vw, 23rem); min-height: 11rem; margin-top: 1.5rem; overflow: hidden; background: var(--color-background); border-radius: var(--radius-md); }
+.project-modal__screenshot { display: block; width: 92%; height: 88%; object-fit: contain; border-radius: var(--radius-md); }
+.project-modal__content { display: grid; gap: 1.5rem; margin-top: 1.5rem; }
+.project-modal__section h3 { margin-bottom: .6rem; color: var(--color-primary-light); }
+.project-modal__section p { line-height: 1.7; }
+.project-modal__section ul { display: grid; gap: .5rem; padding-left: 1.25rem; list-style: disc; }
+.project-modal__section li { line-height: 1.5; }
+.project-modal__technologies { display: flex; flex-wrap: wrap; gap: .5rem; }
+.project-modal__technologies .project-skill { background-color: var(--color-background); }
+.project-modal__period { margin-top: .25rem; color: var(--color-text-muted); font-weight: 600; }
+.project-modal__links { display: flex; flex-wrap: wrap; gap: .75rem; margin-top: .5rem; }
+.project-modal__link { display: inline-flex; align-items: center; justify-content: center; min-height: 2.5rem; padding: .55rem .9rem; color: var(--color-text); background: var(--color-background); border: 1px solid var(--color-border); border-radius: .6rem; font-weight: 600; transition: background-color var(--transition-fast), border-color var(--transition-fast), transform var(--transition-fast); }
+.project-modal__link:hover, .project-modal__link:focus-visible { background: var(--gradient-accent); border-color: var(--color-primary-light); transform: translateY(-1px); }
+.project-modal__carousel-button { position: absolute; z-index: 2; top: 50%; display: grid; place-items: center; width: 3rem; height: 3rem; transform: translateY(-50%); color: #fff; background: rgba(5, 8, 22, .9); border: 2px solid var(--color-primary-light); border-radius: 50%; font-size: 2.25rem; line-height: .8; cursor: pointer; box-shadow: 0 0 14px rgba(124, 77, 255, .45); }
+.project-modal__carousel-button:hover, .project-modal__carousel-button:focus-visible { background: var(--color-primary); transform: translateY(-50%) scale(1.08); }
+.project-modal__carousel-button[hidden] { display: none; }
+.project-modal__carousel-button--previous { left: .75rem; }
+.project-modal__carousel-button--next { right: .75rem; }
+.project-modal-open { overflow: hidden; }
+
+.project-type {
+    position: absolute;
+    top: 12px;
+    left: 12px;
+    background-color: rgba(128, 128, 128, 0.75);
+    border-radius: 15px;
+    padding: 7px;
+}
+
+.project-github-link {
+    position: absolute;
+    top: 12px;
+    right: 12px;
+    background-color: black;
+    border-radius: 99px;
+    padding: 10px;
+    border-color: white;
+}
+
+.project-hr{
+    width: 100%;
+    height: 1px;
+    margin: 0;
+    border: 0;
+    color: rgba(255, 255, 255, 0.06);
+    background-color: rgba(255, 255, 255, 0.08);
+}
+
+#project-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(min(100%, 280px), 1fr));
+    gap: 14px;
+    width: min(100%, var(--project-grid-width));
+    align-items: stretch;
+}
 
 /*   <---- Tablet Ansicht: 768px ---->   */
 @media (min-width: 768px) {
+    .projects-page {
+        --project-grid-width: 624px;
+        padding: 36px var(--spacing-lg) 44px;
+    }
+
+    #project-container {
+        gap: 16px;
+    }
 
 }
 
 /*   <---- Desktop Ansicht: 1024px ---->   */
 @media (min-width: 1024px){
+    .projects-page {
+        --project-grid-width: 944px;
+        padding: 42px var(--spacing-xl) 52px;
+    }
 
 }

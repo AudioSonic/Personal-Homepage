@@ -1,17 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
-
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <!-- CSS -->
     <link rel="stylesheet" href="../css/main.css">
 
-    <!-- JavaScript -->
-    <script src="../js/main.js" defer></script>
+    <script type="module" src="../js/main.js"></script>
 </head>
-
 <body>
     <div class="sidebar-grid">
         <aside>
@@ -19,72 +15,137 @@
                 <div id="sidebar"></div>
             </div>
         </aside>
+
         <div class="content-wrapper">
             <div class="card background-card">
                 <div id="header"></div>
+
                 <main>
                     <div id="sidebar-mobile"></div>
-                    <h1>Contact</h1>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
-                    <br>
+
+                    <div class="contact-layout">
+                        <section class="contact-intro" aria-labelledby="contact-title">
+                            <h1 id="contact-title">
+                                Ich freue mich<br>
+                                auf deine <span>Nachricht.</span>
+                            </h1>
+
+                            <p>
+                                Du hast eine Frage, ein Projekt im Kopf oder möchtest
+                                einfach Hallo sagen? Schreib mir gerne über das Formular.
+                            </p>
+
+                            <div class="contact-details">
+                                <div class="contact-detail-card">
+                                    <div class="contact-detail-icon">
+                                        <img src="../assets/icons/icon_location.svg" alt="">
+                                    </div>
+
+                                    <div>
+                                        <strong>Aktueller Standort</strong>
+                                        <p>Haren (Ems), Niedersachsen, Deutschland</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-card">
+                                    <div class="contact-detail-icon">
+                                        <img src="../assets/icons/icon_location.svg" alt="">
+                                    </div>
+
+                                    <div>
+                                        <strong>Umzugsbereitschaft</strong>
+                                        <p>Ich bin bereit, für die passende Stelle umzuziehen.</p>
+                                    </div>
+                                </div>
+
+                                <div class="contact-detail-card">
+                                    <div class="contact-detail-icon">
+                                        <img src="../assets/icons/icon_globe.svg" alt="">
+                                    </div>
+
+                                    <div>
+                                        <strong>Verfügbar für</strong>
+                                        <p>Vollzeit · Remote · Hybrid</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </section>
+
+                        <section class="contact-form-card" aria-labelledby="form-title">
+                            <h2 id="form-title">
+                                <img src="../assets/icons/icon_mail.svg" alt="">
+                                <span>Schreib mir</span> eine Nachricht
+                            </h2>
+
+                            <form class="contact-form" id="contact-form" novalidate>
+                                <div class="contact-form-row">
+                                    <label>
+                                        <span class="sr-only">Dein Name</span>
+                                        <img src="../assets/icons/icon_person.svg" alt="">
+                                        <input
+                                            type="text"
+                                            name="name"
+                                            placeholder="Dein Name"
+                                            required
+                                        >
+                                    </label>
+
+                                    <label>
+                                        <span class="sr-only">Deine E-Mail</span>
+                                        <img src="../assets/icons/icon_mail.svg" alt="">
+                                        <input
+                                            type="email"
+                                            name="email"
+                                            placeholder="Deine E-Mail"
+                                            required
+                                        >
+                                    </label>
+                                </div>
+
+                                <label>
+                                    <span class="sr-only">Betreff</span>
+                                    <img src="../assets/icons/icon_code.svg" alt="">
+                                    <input
+                                        type="text"
+                                        name="subject"
+                                        placeholder="Betreff"
+                                        required
+                                    >
+                                </label>
+
+                                <label class="message-field">
+                                    <span class="sr-only">Deine Nachricht</span>
+                                    <img src="../assets/icons/icon_mail.svg" alt="">
+                                    <textarea
+                                        name="message"
+                                        placeholder="Deine Nachricht"
+                                        required
+                                    ></textarea>
+                                </label>
+
+                                <button
+                                    class="button cta-button contact-submit"
+                                    type="submit"
+                                >
+                                    <img src="../assets/icons/icon_rocket.svg" alt="">
+                                    Nachricht senden
+                                </button>
+                            </form>
+                        </section>
+                    </div>
+                    <div class="contact-modal" id="contact-modal" hidden role="dialog" aria-modal="true" aria-labelledby="contact-modal-title">
+                        <div class="contact-modal-backdrop" data-modal-close></div>
+                        <div class="contact-modal-card">
+                            <button class="contact-modal-close" type="button" data-modal-close aria-label="Hinweis schließen">×</button>
+                            <div class="contact-detail-icon"><img src="../assets/icons/icon_mail.svg" alt=""></div>
+                            <h2 id="contact-modal-title">Danke für deine Nachricht!</h2>
+                            <p>Das Kontaktformular befindet sich noch im Aufbau. Wenn du mich bereits jetzt erreichen möchtest, schreib mir gerne direkt an <a href="mailto:stach.alex@yahoo.de">stach.alex@yahoo.de</a>.</p>
+                            <button class="button cta-button" type="button" data-modal-close>Schließen</button>
+                        </div>
+                    </div>
                 </main>
-                <div id="footer"></div>
             </div>
         </div>
     </div>
-    
 </body>
-
 </html>
