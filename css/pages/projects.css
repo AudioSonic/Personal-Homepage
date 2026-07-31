@@ -9,10 +9,25 @@
 
 .projects-page .data-overview {
     width: min(100%, var(--project-grid-width));
+    margin-bottom: 30px;
 }
 
 .projects-page .page-desc {
     max-width: 680px;
+}
+
+.category-label--short {
+    display: none;
+}
+
+@media (max-width: 767px) {
+    .category-label--long {
+        display: none;
+    }
+
+    .category-label--short {
+        display: inline;
+    }
 }
 
 .project-card {

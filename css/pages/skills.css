@@ -39,11 +39,16 @@
 
     overflow-x: auto;
     overflow-y: hidden;
+    scrollbar-width: none;
 
     background-color: rgba(17, 24, 39, 0.78);
     border: 1px solid var(--color-border);
     border-radius: 14px;
     white-space: nowrap;
+}
+
+.data-overview::-webkit-scrollbar {
+    display: none;
 }
 
 #skillsContainer {
@@ -65,6 +70,7 @@
 
     .data-overview {
         gap: 10px;
+        margin-bottom: 30px;
     }
 
     #skillsContainer {
