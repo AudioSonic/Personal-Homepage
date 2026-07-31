@@ -23,6 +23,7 @@ let activeScreenshotIndex = 0;
 
 function initProjectsPage() {
     if (!projectContainer) {
+        initProjectModal();
         return;
     }
 
@@ -39,6 +40,7 @@ function initProjectModal() {
 }
 
 function openProjectModal(project) {
+    if (!projectModal) return;
     projectModalTitle.textContent = project.title;
     projectModalStatus.textContent = projectStatusLabels[project.status] || project.status;
     projectModalStatus.className = `project-status project-status--${project.status}`;
@@ -103,6 +105,10 @@ function closeProjectModal() {
     projectModal.hidden = true;
     document.body.classList.remove("project-modal-open");
 }
+
+document.addEventListener("project-modal-open-request", (event) => {
+    if (event.detail) openProjectModal(event.detail);
+});
 
 function setActiveCategory(category) {
     activeCategory = category;
@@ -242,11 +248,23 @@ function createProjectSkill(technology){
     const skillName = document.createElement("span");
 
     projectSkill.classList.add("project-skill");
+    projectSkill.classList.add("project-skill--interactive");
+    projectSkill.tabIndex = 0;
+    projectSkill.setAttribute("role", "button");
+    projectSkill.setAttribute("aria-label", `Details zu ${technology.name} öffnen`);
     skillIcon.src = technology.image;
     skillIcon.alt = `${technology.name} Logo`;
     skillName.textContent = technology.name;
 
     projectSkill.append(skillIcon, skillName);
+    const openSkill = () => document.dispatchEvent(new CustomEvent("skill-modal-open-request", { detail: technology }));
+    projectSkill.addEventListener("click", openSkill);
+    projectSkill.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openSkill();
+        }
+    });
 
     return projectSkill;
 }

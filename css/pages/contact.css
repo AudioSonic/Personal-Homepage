@@ -4,16 +4,16 @@ main { padding: 1.5rem 1rem 2rem; }
 .contact-intro h1 span, .contact-form-card h2 span { color: var(--color-primary-light); }
 .contact-intro > p { max-width: 34rem; line-height: 1.7; }
 .contact-details { display: grid; gap: .8rem; margin-top: 2rem; }
-.contact-detail-card, .contact-response-card { display: flex; align-items: center; gap: 1rem; padding: 10px 15px 10px 15px; background: rgba(17, 24, 39, .72); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.contact-detail-card, .contact-response-card { display: flex; align-items: center; gap: 1rem; padding: 10px 15px 10px 15px; background: var(--color-surface-raised); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
 .contact-detail-icon { flex: 0 0 2.8rem; width: 2.8rem; height: 2.8rem; display: grid; place-items: center; background: var(--gradient-accent); border-radius: .75rem; }
 .contact-detail-icon img { width: 1.35rem; height: 1.35rem; }
 .contact-detail-card strong, .contact-response-card strong { display: block; }
 .contact-detail-card p, .contact-response-card p { margin: .3rem 0 0; font-size: var(--font-size-sm); }
-.contact-form-card { padding: 1.2rem; background: rgba(17, 24, 39, .72); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
+.contact-form-card { padding: 1.2rem; background: var(--color-surface-raised); border: 1px solid var(--color-border); border-radius: var(--radius-md); }
 .contact-form-card h2 { display: flex; align-items: center; gap: .55rem; font-size: var(--font-size-lg); }
 .contact-form { display: grid; gap: 1rem; margin-top: 1.3rem; }
 .contact-form-row { display: grid; gap: 1rem; }
-.contact-form label { display: flex; align-items: flex-start; gap: .7rem; padding: .9rem 1rem; border: 1px solid var(--color-border); border-radius: .7rem; background: rgba(5, 8, 22, .3); }
+.contact-form label { display: flex; align-items: flex-start; gap: .7rem; padding: .9rem 1rem; border: 1px solid var(--color-border); border-radius: .7rem; background: var(--color-surface-soft); }
 .contact-form label img { width: 1.2rem; height: 1.2rem; margin-top: .15rem; }
 .contact-form input, .contact-form textarea { width: 100%; color: var(--color-text); background: transparent; border: 0; outline: 0; font: inherit; }
 .contact-form textarea { min-height: 10rem; resize: vertical; }

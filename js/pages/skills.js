@@ -114,12 +114,31 @@ function openSkillModal(skill, sourceElement) {
         const projectCard = document.createElement("div");
         projectCard.className = "skill-modal__project-card";
         projectCard.textContent = project.title;
+        projectCard.tabIndex = 0;
+        projectCard.setAttribute("role", "button");
+        projectCard.setAttribute("aria-label", `Details zu ${project.title} öffnen`);
+        const openProject = () => {
+            closeSkillModal();
+            document.dispatchEvent(new CustomEvent("project-modal-open-request", { detail: project }));
+        };
+        projectCard.addEventListener("click", openProject);
+        projectCard.addEventListener("keydown", (event) => {
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                openProject();
+            }
+        });
         return projectCard;
     }));
     skillModal.hidden = false;
     document.body.classList.add("modal-open");
     skillModalDialog?.querySelector(".skill-modal__close")?.focus();
 }
+
+document.addEventListener("skill-modal-open-request", (event) => {
+    const skill = skills.find((item) => item.id === event.detail?.id);
+    if (skill) openSkillModal(skill);
+});
 
 function closeSkillModal() {
     if (!skillModal || skillModal.hidden) return;

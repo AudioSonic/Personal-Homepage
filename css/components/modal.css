@@ -124,6 +124,13 @@
     border: 1px solid var(--color-border);
     border-radius: var(--radius-md);
     font-size: var(--font-size-sm);
+    cursor: pointer;
+}
+
+.skill-modal__project-card:hover,
+.skill-modal__project-card:focus-visible {
+    border-color: var(--color-primary-light);
+    background: rgba(124, 77, 255, 0.16);
 }
 
 

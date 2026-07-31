@@ -78,6 +78,25 @@
             </div>
         </section>
     </div>
+    <div id="projectModal" class="project-modal" hidden>
+        <div class="project-modal__backdrop" data-project-modal-close></div>
+        <section class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="projectModalTitle">
+            <button class="project-modal__close" type="button" aria-label="Projekt-Details schließen" data-project-modal-close><span aria-hidden="true">×</span></button>
+            <div class="project-modal__header"><h2 id="projectModalTitle"></h2><span id="projectModalStatus" class="project-status"></span></div>
+            <div class="project-modal__carousel" aria-label="Projekt-Screenshots">
+                <button class="project-modal__carousel-button project-modal__carousel-button--previous" type="button" aria-label="Vorheriger Screenshot">&#8249;</button>
+                <img id="projectModalScreenshot" class="project-modal__screenshot" src="" alt="">
+                <button class="project-modal__carousel-button project-modal__carousel-button--next" type="button" aria-label="Nächster Screenshot">&#8250;</button>
+            </div>
+            <div class="project-modal__content">
+                <section class="project-modal__section"><h3>Beschreibung</h3><p id="projectModalDescription"></p></section>
+                <section class="project-modal__section"><h3>Highlights</h3><ul id="projectModalHighlights"></ul></section>
+                <section class="project-modal__section"><h3>Technologien</h3><div id="projectModalTechnologies" class="project-modal__technologies"></div></section>
+                <p id="projectModalPeriod" class="project-modal__period"></p>
+                <div id="projectModalLinks" class="project-modal__links"></div>
+            </div>
+        </section>
+    </div>
     <script type="module" src="../js/pages/skills.js"></script>
 </body>
 

@@ -1,5 +1,6 @@
 import { createProjectCards } from "./pages/projects.js";
 import { initContactForm } from "./pages/contact.js";
+import "./pages/skills.js";
 
 async function loadComponent(path, elementId) {
     const element = document.getElementById(elementId);
@@ -87,6 +88,20 @@ function initThemeToggle() {
 
     document.documentElement.dataset.theme = initialTheme;
 
+    const updateThemeImages = () => {
+        const isLightTheme = document.documentElement.dataset.theme === "light";
+
+        document.querySelectorAll("[data-light-src]").forEach((image) => {
+            if (!image.dataset.darkSrc) {
+                image.dataset.darkSrc = image.getAttribute("src");
+            }
+
+            image.src = isLightTheme ? image.dataset.lightSrc : image.dataset.darkSrc;
+        });
+    };
+
+    updateThemeImages();
+
     if (!themeToggle) {
         return;
     }
@@ -101,6 +116,7 @@ function initThemeToggle() {
 
         document.documentElement.dataset.theme = nextTheme;
         localStorage.setItem("theme", nextTheme);
+        updateThemeImages();
         updateThemeButtonLabel();
     });
 

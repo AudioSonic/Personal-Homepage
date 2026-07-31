@@ -138,7 +138,7 @@
     padding: 7px 10px;
 
     background-color: var(--color-surface);
-    border: 2px solid rgba(255, 255, 255, 0.2);
+    border: 2px solid var(--color-border);
     box-shadow: 0 2px 5px rgba(243, 242, 242, 0.1);
     border-radius: 9px;
 }
@@ -187,6 +187,8 @@
     background-color: #22c55e;
     color: #052e16;
 }
+
+.project-skill--interactive { cursor: pointer; }
 
 .project-modal[hidden] { display: none; }
 .project-modal { position: fixed; inset: 0; z-index: 30; display: grid; place-items: center; padding: 1rem; }
