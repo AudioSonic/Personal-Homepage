@@ -3,8 +3,8 @@ export const skills = [
         id: 1,
         name: "HTML5",
         category: "web",
-        description: "Strukturiert Webseiten mit semantischem HTML.",
-        detailedDescription: "Erstellung semantischer Webseiten mit Fokus auf Struktur, Accessibility und SEO.",
+        description: "Eine Auszeichnungssprache zur semantischen Strukturierung von Webseiten.",
+        detailedDescription: "Erstellung semantischer Webseiten mit klarer Struktur und Fokus auf Barrierefreiheit und Suchmaschinenoptimierung.",
         image: "../assets/logos/html_logo.png",
         skillList: []
     },
@@ -13,8 +13,8 @@ export const skills = [
         id: 2,
         name: "CSS3",
         category: "web",
-        description: "Gestaltet moderne und responsive Benutzeroberflächen.",
-        detailedDescription: "Styling von Webseiten mit modernen Layout-Techniken, Animationen und responsivem Design.",
+        description: "Eine Stylesheet-Sprache zur Gestaltung responsiver und benutzerfreundlicher Webseiten.",
+        detailedDescription: "Umsetzung moderner Layouts, Animationen und responsiver Designs mit CSS.",
         image: "../assets/logos/css_logo.png",
         skillList: []
     },
@@ -23,8 +23,8 @@ export const skills = [
         id: 3,
         name: "JavaScript",
         category: "web",
-        description: "Erstellt interaktive und dynamische Webanwendungen.",
-        detailedDescription: "Entwicklung interaktiver Benutzeroberflächen sowie Umsetzung dynamischer Funktionen mit modernem JavaScript.",
+        description: "Eine Programmiersprache zur Entwicklung interaktiver und dynamischer Webanwendungen.",
+        detailedDescription: "Entwicklung interaktiver Benutzeroberflächen und dynamischer Funktionen mit JavaScript.",
         image: "../assets/logos/js_logo.png",
         skillList: []
     },
@@ -33,7 +33,7 @@ export const skills = [
         id: 4,
         name: "TypeScript",
         category: "web",
-        description: "Erweitert JavaScript um statische Typisierung.",
+        description: "Eine Programmiersprache, die JavaScript um statische Typisierung erweitert.",
         detailedDescription: "Entwicklung wartbarer Anwendungen durch typsicheren JavaScript-Code.",
         image: "../assets/logos/typescript_logo.png",
         skillList: []
@@ -43,7 +43,7 @@ export const skills = [
         id: 5,
         name: "Node.js",
         category: "web",
-        description: "Führt JavaScript außerhalb des Browsers aus.",
+        description: "Eine Laufzeitumgebung zur Ausführung von JavaScript außerhalb des Browsers.",
         detailedDescription: "Entwicklung serverseitiger Anwendungen und Backend-Logik mit Node.js.",
         image: "../assets/logos/nodejs_logo.png",
         skillList: []
@@ -53,8 +53,8 @@ export const skills = [
         id: 6,
         name: "Express.js",
         category: "web",
-        description: "Erstellt Webserver und REST-Schnittstellen.",
-        detailedDescription: "Aufbau performanter Webserver und APIs mit dem Express.js-Framework.",
+        description: "Ein Webframework zur Entwicklung von Webservern und REST-Schnittstellen.",
+        detailedDescription: "Entwicklung von Webservern und REST-APIs mit dem Express.js-Framework.",
         image: "../assets/logos/express_logo.png",
         skillList: []
     },
@@ -63,7 +63,7 @@ export const skills = [
         id: 7,
         name: "TYPO3",
         category: "web",
-        description: "Pflegt Inhalte in TYPO3-Projekten.",
+        description: "Ein Content-Management-System zur Erstellung und Verwaltung von Webseiten.",
         detailedDescription: "Redaktionelle Pflege und Verwaltung von Webseiten mit dem Content-Management-System TYPO3.",
         image: "../assets/logos/typo3_logo.png",
         skillList: []
@@ -73,7 +73,7 @@ export const skills = [
         id: 8,
         name: "C#",
         category: "software",
-        description: "Entwickelt objektorientierte Anwendungen mit C#.",
+        description: "Eine Programmiersprache zur Entwicklung objektorientierter Anwendungen.",
         detailedDescription: "Entwicklung moderner Desktop- und Softwarelösungen mit der Programmiersprache C#.",
         image: "../assets/logos/csharp_logo.png",
         skillList: []
@@ -83,7 +83,7 @@ export const skills = [
         id: 9,
         name: ".NET",
         category: "software",
-        description: "Entwickelt Anwendungen mit dem .NET Framework.",
+        description: "Eine Entwicklungsplattform zur Erstellung von Anwendungen für verschiedene Einsatzbereiche.",
         detailedDescription: "Entwicklung von Anwendungen auf Basis der .NET-Plattform für verschiedene Einsatzbereiche.",
         image: "../assets/logos/microsoft_logo.png",
         skillList: []
@@ -93,7 +93,7 @@ export const skills = [
         id: 10,
         name: "WPF",
         category: "software",
-        description: "Erstellt moderne Windows-Desktopanwendungen.",
+        description: "Ein UI-Framework zur Entwicklung grafischer Windows-Desktopanwendungen.",
         detailedDescription: "Entwicklung grafischer Desktopanwendungen mit Windows Presentation Foundation (WPF).",
         image: "../assets/logos/microsoft_logo.png",
         skillList: []
@@ -103,7 +103,7 @@ export const skills = [
         id: 11,
         name: "Windows Forms",
         category: "software",
-        description: "Entwickelt klassische Windows-Anwendungen.",
+        description: "Ein UI-Framework zur Entwicklung klassischer Windows-Desktopanwendungen.",
         detailedDescription: "Erstellung klassischer Desktopanwendungen mit Windows Forms.",
         image: "../assets/logos/microsoft_logo.png",
         skillList: []
@@ -113,7 +113,7 @@ export const skills = [
         id: 12,
         name: "Entity Framework",
         category: "software",
-        description: "Vereinfacht den Datenbankzugriff in .NET.",
+        description: "Ein objektrelationales Mapping-Framework für den Datenbankzugriff in .NET.",
         detailedDescription: "Verwaltung und Anbindung relationaler Datenbanken mit Entity Framework.",
         image: "../assets/logos/entityframework_logo.png",
         skillList: []
@@ -123,7 +123,7 @@ export const skills = [
         id: 13,
         name: "MSSQL",
         category: "software",
-        description: "Arbeitet mit Microsoft SQL Server-Datenbanken.",
+        description: "Ein relationales Datenbankmanagementsystem von Microsoft.",
         detailedDescription: "Entwicklung und Verwaltung relationaler Datenbanken mit Microsoft SQL Server.",
         image: "../assets/logos/mssql_logo.png",
         skillList: []
@@ -133,7 +133,7 @@ export const skills = [
         id: 14,
         name: "Unity",
         category: "gamedev",
-        description: "Entwickelt Spiele mit der Unity Engine.",
+        description: "Eine Spiele-Engine zur Entwicklung interaktiver 2D- und 3D-Spiele.",
         detailedDescription: "Entwicklung interaktiver 2D- und 3D-Spiele mit Unity und C#.",
         image: "../assets/logos/unity_logo.png",
         skillList: []
@@ -143,7 +143,7 @@ export const skills = [
         id: 15,
         name: "Unreal Engine",
         category: "gamedev",
-        description: "Erstellt hochwertige 3D-Spielwelten.",
+        description: "Eine Spiele-Engine zur Entwicklung hochwertiger 3D-Spiele und interaktiver Anwendungen.",
         detailedDescription: "Entwicklung moderner Spiele und Prototypen mit der Unreal Engine.",
         image: "../assets/logos/unreal_logo.png",
         skillList: []
@@ -153,7 +153,7 @@ export const skills = [
         id: 16,
         name: "Blender",
         category: "gamedev",
-        description: "Erstellt und bearbeitet 3D-Modelle.",
+        description: "Eine 3D-Software zur Modellierung, Animation und Bearbeitung digitaler Inhalte.",
         detailedDescription: "Modellierung, UV-Mapping und Bearbeitung von 3D-Assets mit Blender.",
         image: "../assets/logos/blender_logo.png",
         skillList: []
@@ -163,7 +163,7 @@ export const skills = [
         id: 17,
         name: "ZBrush",
         category: "gamedev",
-        description: "Erstellt detaillierte digitale Skulpturen.",
+        description: "Eine Software für digitales Sculpting und die Erstellung detaillierter 3D-Modelle.",
         detailedDescription: "Digitales Sculpting hochauflösender Charaktere und Objekte mit ZBrush.",
         image: "../assets/logos/zbrush_logo.png",
         skillList: []
@@ -173,7 +173,7 @@ export const skills = [
         id: 18,
         name: "Substance 3D Painter",
         category: "gamedev",
-        description: "Texturiert 3D-Modelle realistisch.",
+        description: "Eine Software zur Erstellung realistischer Materialien und Texturen für 3D-Modelle.",
         detailedDescription: "Erstellung hochwertiger Materialien und Texturen für 3D-Modelle.",
         image: "../assets/logos/substance_logo.png",
         skillList: []
@@ -183,7 +183,7 @@ export const skills = [
         id: 19,
         name: "Marvelous Designer",
         category: "gamedev",
-        description: "Erstellt realistische Kleidung für 3D-Modelle.",
+        description: "Eine Software zur Simulation und Gestaltung realistischer Kleidung für 3D-Charaktere.",
         detailedDescription: "Simulation und Erstellung realistischer Kleidung für Charaktere in 3D-Projekten.",
         image: "../assets/logos/marvelous_logo.png",
         skillList: []
@@ -193,7 +193,7 @@ export const skills = [
         id: 20,
         name: "Git",
         category: "tools",
-        description: "Verwaltet Projekte mit Versionskontrolle.",
+        description: "Ein Versionskontrollsystem zur Verwaltung und Nachverfolgung von Änderungen an Projekten.",
         detailedDescription: "Versionsverwaltung von Softwareprojekten mit Git.",
         image: "../assets/logos/git_logo.png",
         skillList: []
@@ -203,8 +203,8 @@ export const skills = [
         id: 21,
         name: "GitHub",
         category: "tools",
-        description: "Verwaltet Git-Repositories online.",
-        detailedDescription: "Zusammenarbeit und Verwaltung von Softwareprojekten über GitHub.",
+        description: "Eine Plattform zur Verwaltung von Git-Repositories und Zusammenarbeit an Softwareprojekten.",
+        detailedDescription: "Verwaltung von Repositories und Zusammenarbeit an Softwareprojekten über GitHub.",
         image: "../assets/logos/github_logo.png",
         skillList: []
     },
@@ -213,7 +213,7 @@ export const skills = [
         id: 22,
         name: "GitLab",
         category: "tools",
-        description: "Arbeitet mit GitLab-Repositories und Pipelines.",
+        description: "Eine DevOps-Plattform für Git-Repositories, Zusammenarbeit und CI/CD-Pipelines.",
         detailedDescription: "Versionsverwaltung und Zusammenarbeit mit GitLab.",
         image: "../assets/logos/gitlab_logo.png",
         skillList: []
@@ -223,7 +223,7 @@ export const skills = [
         id: 23,
         name: "Visual Studio",
         category: "tools",
-        description: "Entwickelt Software mit Microsoft Visual Studio.",
+        description: "Eine integrierte Entwicklungsumgebung für die Erstellung und das Debugging von Software.",
         detailedDescription: "Entwicklung und Debugging von .NET-Anwendungen mit Visual Studio.",
         image: "../assets/logos/visualstudio_logo.png",
         skillList: []
@@ -233,7 +233,7 @@ export const skills = [
         id: 24,
         name: "Visual Studio Code",
         category: "tools",
-        description: "Programmiert mit einem modernen Code-Editor.",
+        description: "Ein erweiterbarer Code-Editor für die Entwicklung von Web- und Softwareprojekten.",
         detailedDescription: "Entwicklung von Web- und Softwareprojekten mit Visual Studio Code.",
         image: "../assets/logos/vscode_logo.png",
         skillList: []
@@ -243,7 +243,7 @@ export const skills = [
         id: 25,
         name: "Scrum",
         category: "tools",
-        description: "Arbeitet nach agilen Scrum-Prinzipien.",
+        description: "Ein agiles Vorgehensmodell zur iterativen Entwicklung von Produkten und Software.",
         detailedDescription: "Grundlegende Kenntnisse agiler Softwareentwicklung nach Scrum.",
         image: "../assets/logos/scrum_logo.png",
         skillList: []
@@ -253,7 +253,7 @@ export const skills = [
         id: 26,
         name: "Kanban",
         category: "tools",
-        description: "Organisiert Aufgaben mit Kanban.",
+        description: "Eine Methode zur Visualisierung und Steuerung von Arbeitsabläufen.",
         detailedDescription: "Planung und Organisation von Projekten nach der Kanban-Methode.",
         image: "../assets/logos/kanban_logo.png",
         skillList: []
@@ -262,8 +262,8 @@ export const skills = [
         id: 27,
         name: "List & Label",
         category: "software",
-        description: "Ein professionelles Reporting-Tool",
-        detailedDescription: "Ein professionelles Reporting-Tool zur Erstellung individueller Berichte, Formulare und Druckvorlagen, das ich im beruflichen Umfeld zur Datenaufbereitung und Dokumentenerstellung einsetze.",
+        description: "Erstellt Berichte, Formulare und Druckvorlagen.",
+        detailedDescription: "Erstellung individueller Berichte, Formulare und Druckvorlagen mit List & Label.",
         image: "../assets/logos/List_and_Label_logo.png",
         skillList: []
     },
@@ -271,8 +271,8 @@ export const skills = [
         id: 28,
         name: "Git Extensions",
         category: "tools",
-        description: "Verwaltung von Versionskontrolle",
-        detailedDescription: "Ein Git-Client zur visuellen Verwaltung von Versionskontrolle, den ich zur Organisation von Commits, Branches und Repository-Verläufen in meinen Projekten verwende.",
+        description: "Verwaltet Git-Repositories über eine grafische Oberfläche.",
+        detailedDescription: "Visuelle Verwaltung von Commits, Branches und Repository-Verläufen mit Git Extensions.",
         image: "../assets/logos/git_extensions_logo.png",
         skillList: []
     },

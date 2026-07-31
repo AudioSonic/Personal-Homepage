@@ -2,7 +2,7 @@ export const projects = [
     {
         id: 1,
         title: "BrightBoost Landingpage",
-        shortDescription: "Eine moderne Landing Page für eine fiktive Agentur, die sich auf Business Growth, Social Media Marketing und SEO Optimization spezialisiert.",
+        shortDescription: "Eine responsive Landingpage zur Präsentation der Leistungen einer fiktiven Marketingagentur.",
         longDescription: "Die BrightBoost Landing Page ist eine moderne und responsive Website für eine fiktive Marketing-Agentur mit Fokus auf Business Growth, Social Media Marketing und SEO. Ziel des Projekts war es, eine professionelle Unternehmenspräsenz zu gestalten, die Dienstleistungen übersichtlich präsentiert und potenzielle Kunden durch ein ansprechendes Design anspricht. Die Landing Page verfügt über eine klare Seitenstruktur mit einer Hero Section, mehreren Call-to-Action-Bereichen sowie einer Testimonial-Slideshow. Entwickelt wurde das Projekt mit HTML5, CSS3 und JavaScript. Dabei lag der Schwerpunkt auf einer responsiven Umsetzung, einer modernen Gestaltung und einer sauberen Codebasis.",
         category: "personal",
         type: "web",
@@ -38,7 +38,7 @@ export const projects = [
     {
         id: 2,
         title: "Nordtech-Manufactoring",
-        shortDescription: "Eine fiktive industrielle Webanwendung, die im Rahmen eines Lern- und Portfolioprojekts entwickelt wurde. Ziel ist die Präsentation eines modernen Industrieunternehmens im Web.",
+        shortDescription: "Eine responsive Unternehmenswebsite zur Präsentation eines fiktiven Industrieunternehmens.",
         longDescription: "Die Nordtech Manufacturing Website ist eine moderne und responsive Unternehmenswebsite für ein fiktives Industrieunternehmen. Sie präsentiert die Leistungen, das Unternehmen und eine Kontaktmöglichkeit in einem professionellen und übersichtlichen Design. Das Projekt wurde mit HTML5, CSS3 und JavaScript entwickelt. Der Schwerpunkt lag auf einer klaren Seitenstruktur, einem modernen Erscheinungsbild sowie einer responsiven Umsetzung nach dem Mobile-First-Prinzip.",
         category: "personal",
         type: "web",
@@ -81,7 +81,7 @@ export const projects = [
     {
         id: 3,
         title: "Persönliche Homepage",
-        shortDescription: "Eine moderne, modulare Portfolio-Website zur Präsentation meiner Fähigkeiten und Projekte, die gleichzeitig als praxisnahes Lernprojekt für moderne Frontend-Entwicklung dient.",
+        shortDescription: "Eine modulare Portfolio-Website zur Präsentation von Fähigkeiten, Projekten und Erfahrungen.",
         longDescription: "Meine Portfolio-Homepage dient sowohl als persönliche Präsentation meiner Fähigkeiten und Projekte als auch als praxisnahes Lernprojekt im Bereich Frontend-Entwicklung. Ziel war es, eine moderne und professionelle Website zu entwickeln, die als Portfolio für Bewerbungen genutzt werden kann und gleichzeitig den Einstieg in aktuelle Webtechnologien vertieft.  Die Website wurde mit HTML5, CSS3 und JavaScript entwickelt und folgt einem modularen Aufbau mit wiederverwendbaren Komponenten, dynamisch geladenen Inhalten und einer klaren Trennung von Daten, Logik und Darstellung. Projekte und Skills werden vollständig dynamisch gerendert, wodurch moderne JavaScript-Konzepte wie ES Modules, DOM-Manipulation, State Management und asynchrone Datenverarbeitung praktisch umgesetzt werden. Besonderes Augenmerk lag außerdem auf einem responsiven Design, einer wartbaren Architektur und einer sauberen Codebasis.",
         category: "personal",
         type: "web",
@@ -124,7 +124,7 @@ export const projects = [
     {
         id: 4,
         title: "ApplyHQ",
-        shortDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen. Die Anwendung ermöglicht das Erfassen, Organisieren und Nachverfolgen des gesamten Bewerbungsprozesses und bietet Funktionen wie Suche, Filter, Sortierung sowie JSON-Import und -Export",
+        shortDescription: "Eine Webanwendung zur Erfassung, Organisation und Nachverfolgung von Bewerbungen.",
         longDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen und wurde als praxisnahes Lern- und Portfolio-Projekt entwickelt. Ziel der Anwendung ist es, den gesamten Bewerbungsprozess an einem zentralen Ort zu organisieren – von der Erfassung neuer Bewerbungen über die Verwaltung des aktuellen Status bis hin zur schnellen Suche und Bearbeitung bestehender Einträge.  Die Anwendung wurde mit HTML5, CSS3 und modernem JavaScript entwickelt und setzt auf eine modulare Architektur mit wiederverwendbaren UI-Komponenten und dynamischem Rendering. Bewerbungsdaten werden lokal im Browser gespeichert und können über JSON-Dateien importiert oder exportiert werden. Darüber hinaus verfügt ApplyHQ über ein responsives Design, Such-, Filter- und Sortierfunktionen sowie Unterstützung als Progressive Web App (PWA), wodurch die Anwendung auf Desktop- und Mobilgeräten installiert und wie eine native App genutzt werden kann. Das Projekt wird kontinuierlich weiterentwickelt und dient als Grundlage für den schrittweisen Ausbau zu einer vollwertigen Bewerbungsplattform.",
         category: "personal",
         type: "web",
@@ -156,8 +156,8 @@ export const projects = [
     {
         id: 5,
         title: "itm:MANAGER",
-        shortDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen. Die Anwendung ermöglicht das Erfassen, Organisieren und Nachverfolgen des gesamten Bewerbungsprozesses und bietet Funktionen wie Suche, Filter, Sortierung sowie JSON-Import und -Export",
-        longDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen und wurde als praxisnahes Lern- und Portfolio-Projekt entwickelt. Ziel der Anwendung ist es, den gesamten Bewerbungsprozess an einem zentralen Ort zu organisieren – von der Erfassung neuer Bewerbungen über die Verwaltung des aktuellen Status bis hin zur schnellen Suche und Bearbeitung bestehender Einträge.  Die Anwendung wurde mit HTML5, CSS3 und modernem JavaScript entwickelt und setzt auf eine modulare Architektur mit wiederverwendbaren UI-Komponenten und dynamischem Rendering. Bewerbungsdaten werden lokal im Browser gespeichert und können über JSON-Dateien importiert oder exportiert werden. Darüber hinaus verfügt ApplyHQ über ein responsives Design, Such-, Filter- und Sortierfunktionen sowie Unterstützung als Progressive Web App (PWA), wodurch die Anwendung auf Desktop- und Mobilgeräten installiert und wie eine native App genutzt werden kann. Das Projekt wird kontinuierlich weiterentwickelt und dient als Grundlage für den schrittweisen Ausbau zu einer vollwertigen Bewerbungsplattform.",
+        shortDescription: "Eine Software zur Verwaltung von Kursprogrammen, Teilnehmern und Anmeldungen für Bildungsstätten.",
+        longDescription: "Der itm:MANAGER ist eine Software zur Verwaltung von Kursprogrammen für Bildungsstätten. Kurse, Teilnehmer und Anmeldungen werden zentral gespeichert und verwaltet. Über einen Webservice werden die Kursdaten an die jeweiligen Webseiten übertragen. Ich war an der Pflege und Weiterentwicklung beteiligt, integrierte neue Funktionen, suchte und behob Fehler und pflegte die Dokumentation.",
         category: "professional",
         type: "software",
         status: "inProgress",
@@ -179,12 +179,11 @@ export const projects = [
 
         ],
         highlights: [
-            "Vollständige CRUD-Verwaltung für Bewerbungen",
-            "Suche, Filter und Sortierung in Echtzeit",
-            "Modulare Architektur mit wiederverwendbaren UI-Komponenten",
-            "JSON-Import und -Export sowie Local Storage",
-            "Progressive Web App (PWA) mit Installation auf Desktop und Smartphone",
-            "Responsives Design für alle Bildschirmgrößen"
+            "Verwaltung von Kursen, Teilnehmern und Anmeldungen",
+            "Zentrale Speicherung und Pflege von Kursprogrammdaten",
+            "Übertragung von Kursdaten über einen Webservice",
+            "Integration neuer Funktionen und Fehlerbehebung",
+            "Pflege der technischen Dokumentation"
         ],
         startedAt: "2026-07-09",
         completedAt: ""
@@ -192,8 +191,8 @@ export const projects = [
     {
         id: 6,
         title: "itm:PAGES",
-        shortDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen. Die Anwendung ermöglicht das Erfassen, Organisieren und Nachverfolgen des gesamten Bewerbungsprozesses und bietet Funktionen wie Suche, Filter, Sortierung sowie JSON-Import und -Export",
-        longDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen und wurde als praxisnahes Lern- und Portfolio-Projekt entwickelt. Ziel der Anwendung ist es, den gesamten Bewerbungsprozess an einem zentralen Ort zu organisieren – von der Erfassung neuer Bewerbungen über die Verwaltung des aktuellen Status bis hin zur schnellen Suche und Bearbeitung bestehender Einträge.  Die Anwendung wurde mit HTML5, CSS3 und modernem JavaScript entwickelt und setzt auf eine modulare Architektur mit wiederverwendbaren UI-Komponenten und dynamischem Rendering. Bewerbungsdaten werden lokal im Browser gespeichert und können über JSON-Dateien importiert oder exportiert werden. Darüber hinaus verfügt ApplyHQ über ein responsives Design, Such-, Filter- und Sortierfunktionen sowie Unterstützung als Progressive Web App (PWA), wodurch die Anwendung auf Desktop- und Mobilgeräten installiert und wie eine native App genutzt werden kann. Das Projekt wird kontinuierlich weiterentwickelt und dient als Grundlage für den schrittweisen Ausbau zu einer vollwertigen Bewerbungsplattform.",
+        shortDescription: "Ein Tool zur Erstellung digital verlinkter Kursprogrammhefte für Volkshochschulen.",
+        longDescription: "itm:PAGES stattet Kursprogrammhefte von Volkshochschulen mit direkten Links zu den jeweiligen Kursseiten aus. Jeder Kurs erhält einen Button, über den Leser direkt zur passenden Kursseite auf der Website der Volkshochschule gelangen. Die fertigen Hefte werden anschließend auf den jeweiligen Webseiten eingebunden. Ich erstelle die Hefte und bin allein für die Pflege und Erweiterung des Programms verantwortlich. Dafür habe ich den bestehenden Code refaktoriert und zahlreiche redundante Arbeitsschritte automatisiert.",
         category: "professional",
         type: "software",
         status: "inProgress",
@@ -206,21 +205,20 @@ export const projects = [
         screenshots: [
         ],
         highlights: [
-            "Vollständige CRUD-Verwaltung für Bewerbungen",
-            "Suche, Filter und Sortierung in Echtzeit",
-            "Modulare Architektur mit wiederverwendbaren UI-Komponenten",
-            "JSON-Import und -Export sowie Local Storage",
-            "Progressive Web App (PWA) mit Installation auf Desktop und Smartphone",
-            "Responsives Design für alle Bildschirmgrößen"
+            "Verlinkung einzelner Kurse mit den jeweiligen Kursseiten",
+            "Erstellung digital verlinkter Kursprogrammhefte",
+            "Automatisierung redundanter Arbeitsschritte",
+            "Refaktorierung des bestehenden Codes",
+            "Eigenständige Pflege und Weiterentwicklung"
         ],
         startedAt: "2026-07-09",
         completedAt: ""
     },
     {
         id: 7,
-        title: "Tool zur Massen-datenänderung",
-        shortDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen. Die Anwendung ermöglicht das Erfassen, Organisieren und Nachverfolgen des gesamten Bewerbungsprozesses und bietet Funktionen wie Suche, Filter, Sortierung sowie JSON-Import und -Export",
-        longDescription: "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen und wurde als praxisnahes Lern- und Portfolio-Projekt entwickelt. Ziel der Anwendung ist es, den gesamten Bewerbungsprozess an einem zentralen Ort zu organisieren – von der Erfassung neuer Bewerbungen über die Verwaltung des aktuellen Status bis hin zur schnellen Suche und Bearbeitung bestehender Einträge.  Die Anwendung wurde mit HTML5, CSS3 und modernem JavaScript entwickelt und setzt auf eine modulare Architektur mit wiederverwendbaren UI-Komponenten und dynamischem Rendering. Bewerbungsdaten werden lokal im Browser gespeichert und können über JSON-Dateien importiert oder exportiert werden. Darüber hinaus verfügt ApplyHQ über ein responsives Design, Such-, Filter- und Sortierfunktionen sowie Unterstützung als Progressive Web App (PWA), wodurch die Anwendung auf Desktop- und Mobilgeräten installiert und wie eine native App genutzt werden kann. Das Projekt wird kontinuierlich weiterentwickelt und dient als Grundlage für den schrittweisen Ausbau zu einer vollwertigen Bewerbungsplattform.",
+        title: "Tool zur Massendatenänderung",
+        shortDescription: "Ein eigenständig entwickeltes Tool zur effizienten Bearbeitung, Validierung und Protokollierung großer Datenmengen im itm:MANAGER.",
+        longDescription: "Das Tool zur Massendatenänderung entstand als Abschlussprojekt meiner betrieblichen Einzelumschulung zum Fachinformatiker für Anwendungsentwicklung. Die Anwendung ermöglicht es, große Datenmengen im itm:MANAGER gleichzeitig zu bearbeiten, zu validieren und zu protokollieren. Dadurch wird der administrative Aufwand reduziert und die Nachvollziehbarkeit von Änderungen verbessert. Die funktionale Logik des itm:MANAGER wurde mit einem vollständig in Figma entwickelten UI/UX-Konzept verbunden. Die Anwendung wurde mit C# und Windows Forms entwickelt und um eine direkte Anbindung an Microsoft SQL Server sowie eine Protokollierungsfunktion ergänzt. Ich war für Planung, Konzeption, Implementierung, Testing und Präsentation des gesamten Projekts verantwortlich.",
         category: "professional",
         type: "software",
         status: "completed",
@@ -242,12 +240,12 @@ export const projects = [
 
         ],
         highlights: [
-            "Vollständige CRUD-Verwaltung für Bewerbungen",
-            "Suche, Filter und Sortierung in Echtzeit",
-            "Modulare Architektur mit wiederverwendbaren UI-Komponenten",
-            "JSON-Import und -Export sowie Local Storage",
-            "Progressive Web App (PWA) mit Installation auf Desktop und Smartphone",
-            "Responsives Design für alle Bildschirmgrößen"
+            "Massenbearbeitung großer Datenmengen",
+            "Datenvalidierung und nachvollziehbare Änderungsprotokolle",
+            "Direkte Anbindung an Microsoft SQL Server",
+            "Entwicklung mit C# und Windows Forms",
+            "UI/UX-Konzept und Umsetzung in Figma",
+            "Performance-Optimierung und eigenständige Projektplanung"
         ],
         startedAt: "2026-07-09",
         completedAt: ""
