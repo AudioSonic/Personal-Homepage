@@ -6,6 +6,20 @@ const DEFAULT_CATEGORY = "personal";
 let activeCategory = DEFAULT_CATEGORY;
 const projectContainer = document.getElementById("project-container");
 const categoryButtons = document.querySelectorAll("[data-category]");
+const projectModal = document.getElementById("projectModal");
+const projectModalTitle = document.getElementById("projectModalTitle");
+const projectModalStatus = document.getElementById("projectModalStatus");
+const projectModalScreenshot = document.getElementById("projectModalScreenshot");
+const projectModalDescription = document.getElementById("projectModalDescription");
+const projectModalHighlights = document.getElementById("projectModalHighlights");
+const projectModalTechnologies = document.getElementById("projectModalTechnologies");
+const projectModalPeriod = document.getElementById("projectModalPeriod");
+const projectModalLinks = document.getElementById("projectModalLinks");
+const projectModalPrevious = document.querySelector(".project-modal__carousel-button--previous");
+const projectModalNext = document.querySelector(".project-modal__carousel-button--next");
+const projectModalCloseElements = document.querySelectorAll("[data-project-modal-close]");
+let activeProjectScreenshots = [];
+let activeScreenshotIndex = 0;
 
 function initProjectsPage() {
     if (!projectContainer) {
@@ -13,6 +27,81 @@ function initProjectsPage() {
     }
 
     initCategoryFilter(categoryButtons, DEFAULT_CATEGORY, setActiveCategory);
+    initProjectModal();
+}
+
+function initProjectModal() {
+    if (!projectModal) return;
+    projectModalCloseElements.forEach((element) => element.addEventListener("click", closeProjectModal));
+    projectModalPrevious.addEventListener("click", () => changeProjectScreenshot(-1));
+    projectModalNext.addEventListener("click", () => changeProjectScreenshot(1));
+    document.addEventListener("keydown", (event) => { if (event.key === "Escape" && !projectModal.hidden) closeProjectModal(); });
+}
+
+function openProjectModal(project) {
+    projectModalTitle.textContent = project.title;
+    projectModalStatus.textContent = projectStatusLabels[project.status] || project.status;
+    projectModalStatus.className = `project-status project-status--${project.status}`;
+    projectModalDescription.textContent = project.longDescription || "";
+    projectModalHighlights.replaceChildren(...(project.highlights ?? []).map((highlight) => {
+        const listItem = document.createElement("li");
+        listItem.textContent = highlight;
+        return listItem;
+    }));
+    projectModalTechnologies.replaceChildren(...(project.technologies ?? [])
+        .map(getProjectSkill)
+        .filter(Boolean)
+        .map(createProjectSkill));
+    projectModalPeriod.textContent = `Zeitraum: ${formatProjectDate(project.startedAt)} – ${project.completedAt ? formatProjectDate(project.completedAt) : "heute"}`;
+    projectModalLinks.replaceChildren(...[
+        createProjectLink(project.github, "GitHub", "GitHub öffnen"),
+        createProjectLink(project.liveDemo, "Live Demo", "Live Demo öffnen")
+    ].filter(Boolean));
+    activeProjectScreenshots = project.screenshots ?? [];
+    activeScreenshotIndex = 0;
+    if (activeProjectScreenshots.length > 0) {
+        updateProjectScreenshot();
+    }
+    projectModal.hidden = false;
+    document.body.classList.add("project-modal-open");
+}
+
+function changeProjectScreenshot(direction) {
+    activeScreenshotIndex = (activeScreenshotIndex + direction + activeProjectScreenshots.length) % activeProjectScreenshots.length;
+    updateProjectScreenshot();
+}
+
+function updateProjectScreenshot() {
+    const screenshot = activeProjectScreenshots[activeScreenshotIndex];
+    projectModalScreenshot.src = screenshot.src;
+    projectModalScreenshot.alt = screenshot.alt || projectModalTitle.textContent;
+    const hasMultipleScreenshots = activeProjectScreenshots.length > 1;
+    projectModalPrevious.hidden = !hasMultipleScreenshots;
+    projectModalNext.hidden = !hasMultipleScreenshots;
+}
+
+function formatProjectDate(dateValue) {
+    if (!dateValue) return "";
+    const [year, month, day] = dateValue.split("-");
+    return `${day}.${month}.${year}`;
+}
+
+function createProjectLink(url, label, ariaLabel) {
+    if (!url) return null;
+
+    const link = document.createElement("a");
+    link.href = url;
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.className = "project-modal__link";
+    link.textContent = label;
+    link.setAttribute("aria-label", ariaLabel);
+    return link;
+}
+
+function closeProjectModal() {
+    projectModal.hidden = true;
+    document.body.classList.remove("project-modal-open");
 }
 
 function setActiveCategory(category) {
@@ -80,6 +169,8 @@ export function createProjectCard(project){
     projectDesc.textContent = project.shortDescription;
     projectDesc.classList.add("project-description");
     additionalDetailsButton.textContent = "Details ansehen ➜";
+    additionalDetailsButton.type = "button";
+    additionalDetailsButton.addEventListener("click", () => openProjectModal(project));
 
     const projectSkillItems = (project.technologies ?? [])
         .map(getProjectSkill)

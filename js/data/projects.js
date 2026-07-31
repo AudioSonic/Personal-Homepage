@@ -19,7 +19,7 @@ export const projects = [
                 alt: "BrightBoost Hero Section"
             },
             {
-                src: "../assets/images/BrightBoost_Screenshot_2.png",
+                src: "../assets/screenshots/BrightBoost_Screenshot_2.png",
                 alt: "Brightboost Caroussel"
             }
 
