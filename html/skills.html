@@ -56,6 +56,28 @@
             </div>
         </div>
     </div>
+    <div id="skillModal" class="skill-modal" hidden>
+        <div class="skill-modal__backdrop" data-modal-close></div>
+        <section class="skill-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="skillModalTitle">
+            <button class="skill-modal__close" type="button" aria-label="Skill-Details schließen" data-modal-close>
+                <span aria-hidden="true">×</span>
+            </button>
+            <div class="skill-modal__header">
+                <div class="skill-modal__icon">
+                    <img id="skillModalImage" src="" alt="">
+                </div>
+                <h2 id="skillModalTitle"></h2>
+            </div>
+            <div class="skill-modal__content">
+                <h3>Beschreibung</h3>
+                <p id="skillModalDescription"></p>
+                <h3>Highlights</h3>
+                <ul id="skillModalHighlights"></ul>
+                <h3>Projekte</h3>
+                <div id="skillModalProjects" class="skill-modal__projects"></div>
+            </div>
+        </section>
+    </div>
     <script type="module" src="../js/pages/skills.js"></script>
 </body>
 

@@ -4,9 +4,10 @@ export const skills = [
         name: "HTML5",
         category: "web",
         description: "Eine Auszeichnungssprache zur semantischen Strukturierung von Webseiten.",
-        detailedDescription: "Erstellung semantischer Webseiten mit klarer Struktur und Fokus auf Barrierefreiheit und Suchmaschinenoptimierung.",
+        detailedDescription: "HTML5 ermöglicht semantische Webseiten mit klarer Struktur und Fokus auf Barrierefreiheit und Suchmaschinenoptimierung. Dadurch entsteht eine solide Grundlage für verständliche, zugängliche und gut auffindbare Inhalte.",
         image: "../assets/logos/html_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Semantische HTML-Strukturen", "Barrierearme Webseiten", "SEO-freundliche Inhalte", "Formulare und Eingaben", "Moderne HTML5-Elemente"]
     },
 
     {
@@ -14,9 +15,10 @@ export const skills = [
         name: "CSS3",
         category: "web",
         description: "Eine Stylesheet-Sprache zur Gestaltung responsiver und benutzerfreundlicher Webseiten.",
-        detailedDescription: "Umsetzung moderner Layouts, Animationen und responsiver Designs mit CSS.",
+        detailedDescription: "CSS3 ermöglicht moderne Layouts, Animationen und responsive Designs. Klare visuelle Strukturen lassen sich dabei mit flexiblen Komponenten verbinden, die sich an unterschiedliche Bildschirmgrößen anpassen.",
         image: "../assets/logos/css_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Responsive Layouts", "Flexbox und CSS Grid", "Animationen und Übergänge", "Designsysteme und Themes", "Adaptive Komponenten"]
     },
 
     {
@@ -26,7 +28,8 @@ export const skills = [
         description: "Eine Programmiersprache zur Entwicklung interaktiver und dynamischer Webanwendungen.",
         detailedDescription: "Entwicklung interaktiver Benutzeroberflächen und dynamischer Funktionen mit JavaScript.",
         image: "../assets/logos/js_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Interaktive Benutzeroberflächen", "DOM-Manipulation", "API-Kommunikation", "Event-Handling", "Asynchrone Abläufe"]
     },
 
     {
@@ -34,9 +37,10 @@ export const skills = [
         name: "TypeScript",
         category: "web",
         description: "Eine Programmiersprache, die JavaScript um statische Typisierung erweitert.",
-        detailedDescription: "Entwicklung wartbarer Anwendungen durch typsicheren JavaScript-Code.",
+        detailedDescription: "TypeScript ermöglicht wartbare Anwendungen durch typsicheren JavaScript-Code. Interfaces und explizite Typen helfen dabei, Fehler früh zu erkennen und komplexe Codebasen verständlich zu halten.",
         image: "../assets/logos/typescript_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Statische Typisierung", "Interfaces und Typmodelle", "Wartbare Codebasen", "Frühe Fehlererkennung", "Sichere Refactorings"]
     },
 
     {
@@ -46,7 +50,8 @@ export const skills = [
         description: "Eine Laufzeitumgebung zur Ausführung von JavaScript außerhalb des Browsers.",
         detailedDescription: "Entwicklung serverseitiger Anwendungen und Backend-Logik mit Node.js.",
         image: "../assets/logos/nodejs_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Serverseitige JavaScript-Anwendungen", "REST- und API-Backends", "Ereignisbasierte Verarbeitung", "Datei- und Datenbankzugriff", "Wiederverwendbare Services"]
     },
 
     {
@@ -54,9 +59,10 @@ export const skills = [
         name: "Express.js",
         category: "web",
         description: "Ein Webframework zur Entwicklung von Webservern und REST-Schnittstellen.",
-        detailedDescription: "Entwicklung von Webservern und REST-APIs mit dem Express.js-Framework.",
+        detailedDescription: "Express.js ermöglicht die Entwicklung von Webservern und REST-APIs auf Basis von Node.js. Routing, Middleware und Fehlerbehandlung lassen sich damit übersichtlich strukturieren und flexibel erweitern.",
         image: "../assets/logos/express_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["REST-API-Entwicklung", "Routing und Middleware", "Request- und Response-Verarbeitung", "Fehlerbehandlung", "Modulare Serverstrukturen"]
     },
 
     {
@@ -66,7 +72,8 @@ export const skills = [
         description: "Ein Content-Management-System zur Erstellung und Verwaltung von Webseiten.",
         detailedDescription: "Redaktionelle Pflege und Verwaltung von Webseiten mit dem Content-Management-System TYPO3.",
         image: "../assets/logos/typo3_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Redaktionelle Inhaltsverwaltung", "Seiten- und Navigationsstrukturen", "Redakteurs-Workflows", "Wiederverwendbare Inhaltselemente", "Pflege umfangreicher Webseiten"]
     },
 
     {
@@ -76,7 +83,8 @@ export const skills = [
         description: "Eine Programmiersprache zur Entwicklung objektorientierter Anwendungen.",
         detailedDescription: "Entwicklung moderner Desktop- und Softwarelösungen mit der Programmiersprache C#.",
         image: "../assets/logos/csharp_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Objektorientierte Entwicklung", "Desktopanwendungen", "Moderne Sprachfeatures", "Saubere Architektur", "Robuste Geschäftslogik"]
     },
 
     {
@@ -86,7 +94,8 @@ export const skills = [
         description: "Eine Entwicklungsplattform zur Erstellung von Anwendungen für verschiedene Einsatzbereiche.",
         detailedDescription: "Entwicklung von Anwendungen auf Basis der .NET-Plattform für verschiedene Einsatzbereiche.",
         image: "../assets/logos/microsoft_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Anwendungsentwicklung auf .NET-Basis", "Wiederverwendbare Bibliotheken", "Plattformübergreifende Konzepte", "Umfangreiches Ökosystem", "Integration von Frameworks und Services"]
     },
 
     {
@@ -96,7 +105,8 @@ export const skills = [
         description: "Ein UI-Framework zur Entwicklung grafischer Windows-Desktopanwendungen.",
         detailedDescription: "Entwicklung grafischer Desktopanwendungen mit Windows Presentation Foundation (WPF).",
         image: "../assets/logos/microsoft_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Grafische Windows-Anwendungen", "XAML-Oberflächen", "Datenbindung", "Wiederverwendbare UI-Komponenten", "Individuelle Styles und Templates"]
     },
 
     {
@@ -104,9 +114,10 @@ export const skills = [
         name: "Windows Forms",
         category: "software",
         description: "Ein UI-Framework zur Entwicklung klassischer Windows-Desktopanwendungen.",
-        detailedDescription: "Erstellung klassischer Desktopanwendungen mit Windows Forms.",
+        detailedDescription: "Windows Forms ermöglicht die Erstellung klassischer Desktopanwendungen für Windows. Die übersichtliche Entwicklung mit Standardkomponenten eignet sich besonders für interne Werkzeuge und datenbasierte Anwendungen.",
         image: "../assets/logos/microsoft_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Klassische Windows-Oberflächen", "Schnelle Prototypen", "Standard-UI-Komponenten", "Ereignisbasierte Logik", "Datenbasierte Werkzeuge"]
     },
 
     {
@@ -116,7 +127,8 @@ export const skills = [
         description: "Ein objektrelationales Mapping-Framework für den Datenbankzugriff in .NET.",
         detailedDescription: "Verwaltung und Anbindung relationaler Datenbanken mit Entity Framework.",
         image: "../assets/logos/entityframework_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Object-Relational Mapping", "Datenmodelle und Beziehungen", "LINQ-Abfragen", "Migrationen", "CRUD-Operationen"]
     },
 
     {
@@ -124,9 +136,10 @@ export const skills = [
         name: "MSSQL",
         category: "software",
         description: "Ein relationales Datenbankmanagementsystem von Microsoft.",
-        detailedDescription: "Entwicklung und Verwaltung relationaler Datenbanken mit Microsoft SQL Server.",
+        detailedDescription: "Microsoft SQL Server ermöglicht die Entwicklung und Verwaltung relationaler Datenbanken für zuverlässige Anwendungen. Tabellen, Beziehungen und Abfragen werden strukturiert angelegt und auf Datenintegrität ausgelegt.",
         image: "../assets/logos/mssql_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Relationale Datenmodelle", "SQL-Abfragen", "Tabellen und Beziehungen", "Datenintegrität", "Datenbankverwaltung"]
     },
 
     {
@@ -134,9 +147,10 @@ export const skills = [
         name: "Unity",
         category: "gamedev",
         description: "Eine Spiele-Engine zur Entwicklung interaktiver 2D- und 3D-Spiele.",
-        detailedDescription: "Entwicklung interaktiver 2D- und 3D-Spiele mit Unity und C#.",
+        detailedDescription: "Unity und C# ermöglichen die Entwicklung interaktiver 2D- und 3D-Spiele sowie spielbarer Prototypen. Gameplay-Logik, Physik, Szenen und Benutzereingaben lassen sich dabei iterativ umsetzen und testen.",
         image: "../assets/logos/unity_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["2D- und 3D-Spiele", "Gameplay-Programmierung", "Physik und Kollisionen", "C#-Scripting", "Prototyping"]
     },
 
     {
@@ -144,9 +158,10 @@ export const skills = [
         name: "Unreal Engine",
         category: "gamedev",
         description: "Eine Spiele-Engine zur Entwicklung hochwertiger 3D-Spiele und interaktiver Anwendungen.",
-        detailedDescription: "Entwicklung moderner Spiele und Prototypen mit der Unreal Engine.",
+        detailedDescription: "Die Unreal Engine ermöglicht die Entwicklung moderner Spiele und interaktiver 3D-Prototypen. Die Kombination aus visuellen Blueprints, C++-Anbindung und leistungsfähigem Echtzeit-Rendering unterstützt schnelle Iterationen.",
         image: "../assets/logos/unreal_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Hochwertige 3D-Welten", "Blueprints und Gameplay", "Materialien und Beleuchtung", "Prototyping", "Echtzeit-Rendering"]
     },
 
     {
@@ -154,9 +169,10 @@ export const skills = [
         name: "Blender",
         category: "gamedev",
         description: "Eine 3D-Software zur Modellierung, Animation und Bearbeitung digitaler Inhalte.",
-        detailedDescription: "Modellierung, UV-Mapping und Bearbeitung von 3D-Assets mit Blender.",
+        detailedDescription: "Blender ermöglicht die Erstellung und Bearbeitung von 3D-Assets, von der Modellierung bis zum UV-Mapping. Außerdem lassen sich Materialien, Animationen und Renderings in einer durchgängigen 3D-Pipeline umsetzen.",
         image: "../assets/logos/blender_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["3D-Modellierung", "UV-Mapping", "Texturierung", "Animation und Rigging", "Rendering"]
     },
 
     {
@@ -166,7 +182,8 @@ export const skills = [
         description: "Eine Software für digitales Sculpting und die Erstellung detaillierter 3D-Modelle.",
         detailedDescription: "Digitales Sculpting hochauflösender Charaktere und Objekte mit ZBrush.",
         image: "../assets/logos/zbrush_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Digitales Sculpting", "Charakterdesign", "Hochauflösende Details", "Hard-Surface-Formen", "Retopologie-Vorbereitung"]
     },
 
     {
@@ -176,7 +193,8 @@ export const skills = [
         description: "Eine Software zur Erstellung realistischer Materialien und Texturen für 3D-Modelle.",
         detailedDescription: "Erstellung hochwertiger Materialien und Texturen für 3D-Modelle.",
         image: "../assets/logos/substance_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["PBR-Materialien", "Texturierung von 3D-Assets", "Masken und Ebenen", "Realistische Oberflächen", "Material-Export für Game-Engines"]
     },
 
     {
@@ -186,7 +204,8 @@ export const skills = [
         description: "Eine Software zur Simulation und Gestaltung realistischer Kleidung für 3D-Charaktere.",
         detailedDescription: "Simulation und Erstellung realistischer Kleidung für Charaktere in 3D-Projekten.",
         image: "../assets/logos/marvelous_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Virtuelle Schnittmuster", "Realistische Kleidung", "Stoffsimulation", "Charakter-Outfits", "Export für 3D-Pipelines"]
     },
 
     {
@@ -194,9 +213,10 @@ export const skills = [
         name: "Git",
         category: "tools",
         description: "Ein Versionskontrollsystem zur Verwaltung und Nachverfolgung von Änderungen an Projekten.",
-        detailedDescription: "Versionsverwaltung von Softwareprojekten mit Git.",
+        detailedDescription: "Git dient der Versionsverwaltung von Softwareprojekten und der nachvollziehbaren Organisation von Änderungen. Branches, Commits und Merges unterstützen dabei eine sichere und strukturierte Zusammenarbeit.",
         image: "../assets/logos/git_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Versionsverwaltung", "Branches und Merges", "Commit-Historie", "Konfliktlösung", "Sichere Entwicklungsabläufe"]
     },
 
     {
@@ -206,7 +226,8 @@ export const skills = [
         description: "Eine Plattform zur Verwaltung von Git-Repositories und Zusammenarbeit an Softwareprojekten.",
         detailedDescription: "Verwaltung von Repositories und Zusammenarbeit an Softwareprojekten über GitHub.",
         image: "../assets/logos/github_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Repository-Verwaltung", "Pull Requests", "Code Reviews", "Issue- und Projektverwaltung", "Zusammenarbeit im Team"]
     },
 
     {
@@ -216,7 +237,8 @@ export const skills = [
         description: "Eine DevOps-Plattform für Git-Repositories, Zusammenarbeit und CI/CD-Pipelines.",
         detailedDescription: "Versionsverwaltung und Zusammenarbeit mit GitLab.",
         image: "../assets/logos/gitlab_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Repository-Verwaltung", "CI/CD-Pipelines", "Merge Requests", "Issue-Tracking", "DevOps-Workflows"]
     },
 
     {
@@ -226,7 +248,8 @@ export const skills = [
         description: "Eine integrierte Entwicklungsumgebung für die Erstellung und das Debugging von Software.",
         detailedDescription: "Entwicklung und Debugging von .NET-Anwendungen mit Visual Studio.",
         image: "../assets/logos/visualstudio_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: [".NET-Entwicklung", "Debugging", "Projektverwaltung", "Integrierte Tools", "Testen und Profiling"]
     },
 
     {
@@ -236,7 +259,8 @@ export const skills = [
         description: "Ein erweiterbarer Code-Editor für die Entwicklung von Web- und Softwareprojekten.",
         detailedDescription: "Entwicklung von Web- und Softwareprojekten mit Visual Studio Code.",
         image: "../assets/logos/vscode_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Webentwicklung", "Erweiterbare Editor-Workflows", "Debugging", "Versionskontrolle", "Integriertes Terminal"]
     },
 
     {
@@ -246,7 +270,8 @@ export const skills = [
         description: "Ein agiles Vorgehensmodell zur iterativen Entwicklung von Produkten und Software.",
         detailedDescription: "Grundlegende Kenntnisse agiler Softwareentwicklung nach Scrum.",
         image: "../assets/logos/scrum_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Iterative Entwicklung", "Sprint-Planung", "Daily Stand-ups", "Reviews und Retrospektiven", "Transparente Teamarbeit"]
     },
 
     {
@@ -256,7 +281,8 @@ export const skills = [
         description: "Eine Methode zur Visualisierung und Steuerung von Arbeitsabläufen.",
         detailedDescription: "Planung und Organisation von Projekten nach der Kanban-Methode.",
         image: "../assets/logos/kanban_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Visualisierung von Aufgaben", "Kontinuierlicher Arbeitsfluss", "WIP-Limits", "Priorisierung", "Transparente Prozesse"]
     },
     {
         id: 27,
@@ -265,7 +291,8 @@ export const skills = [
         description: "Erstellt Berichte, Formulare und Druckvorlagen.",
         detailedDescription: "Erstellung individueller Berichte, Formulare und Druckvorlagen mit List & Label.",
         image: "../assets/logos/List_and_Label_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Individuelle Berichte", "Druckvorlagen", "Formulardesign", "Datenbindung", "Export und Ausgabeformate"]
     },
         {
         id: 28,
@@ -274,7 +301,8 @@ export const skills = [
         description: "Verwaltet Git-Repositories über eine grafische Oberfläche.",
         detailedDescription: "Visuelle Verwaltung von Commits, Branches und Repository-Verläufen mit Git Extensions.",
         image: "../assets/logos/git_extensions_logo.png",
-        skillList: []
+        skillList: [],
+        highlights: ["Grafische Git-Verwaltung", "Commit- und Branch-Übersicht", "Visuelle Merge-Konflikte", "Repository-Vergleiche", "Arbeitsabläufe ohne CLI"]
     },
 
 ];

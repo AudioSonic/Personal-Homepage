@@ -1,10 +1,19 @@
 import { initCategoryFilter } from "./helper.js";
 import { skills } from "../data/skills.js";
+import { projects } from "../data/projects.js";
 
 let activeCategory = "web";
 
 const skillsContainer = document.getElementById("skillsContainer");
 const categoryButtons = document.querySelectorAll("[data-category]");
+const skillModal = document.getElementById("skillModal");
+const skillModalDialog = skillModal?.querySelector(".skill-modal__dialog");
+const skillModalImage = document.getElementById("skillModalImage");
+const skillModalTitle = document.getElementById("skillModalTitle");
+const skillModalDescription = document.getElementById("skillModalDescription");
+const skillModalHighlights = document.getElementById("skillModalHighlights");
+const skillModalProjects = document.getElementById("skillModalProjects");
+let lastFocusedElement = null;
 
 if (skillsContainer) {
     initCategoryFilter(categoryButtons, activeCategory, (category) => {
@@ -45,6 +54,9 @@ function createSkillCard(skill) {
     const description = document.createElement("p");
 
     card.className = "card skill-card";
+    card.tabIndex = 0;
+    card.setAttribute("role", "button");
+    card.setAttribute("aria-label", `Details zu ${skill.name} öffnen`);
     upperSection.className = "skill-card-upper-section";
     iconWrapper.className = "skill-card-icon";
     progressWrapper.className = "skill-card-progressbar";
@@ -71,8 +83,59 @@ function createSkillCard(skill) {
     descriptionWrapper.appendChild(description);
     card.append(upperSection, descriptionWrapper);
 
+    card.addEventListener("click", () => openSkillModal(skill, card));
+    card.addEventListener("keydown", (event) => {
+        if (event.key === "Enter" || event.key === " ") {
+            event.preventDefault();
+            openSkillModal(skill, card);
+        }
+    });
+
     return card;
 }
+
+function openSkillModal(skill, sourceElement) {
+    if (!skillModal) return;
+
+    lastFocusedElement = sourceElement;
+    skillModalImage.src = skill.image;
+    skillModalImage.alt = `${skill.name} Logo`;
+    skillModalTitle.textContent = skill.name;
+    skillModalDescription.textContent = skill.detailedDescription;
+    skillModalHighlights.replaceChildren(...(skill.highlights ?? []).map((highlight) => {
+        const item = document.createElement("li");
+        item.textContent = highlight;
+        return item;
+    }));
+    const relatedProjects = projects.filter((project) =>
+        project.technologies?.includes(skill.id)
+    );
+    skillModalProjects.replaceChildren(...relatedProjects.map((project) => {
+        const projectCard = document.createElement("div");
+        projectCard.className = "skill-modal__project-card";
+        projectCard.textContent = project.title;
+        return projectCard;
+    }));
+    skillModal.hidden = false;
+    document.body.classList.add("modal-open");
+    skillModalDialog?.querySelector(".skill-modal__close")?.focus();
+}
+
+function closeSkillModal() {
+    if (!skillModal || skillModal.hidden) return;
+
+    skillModal.hidden = true;
+    document.body.classList.remove("modal-open");
+    lastFocusedElement?.focus();
+}
+
+skillModal?.addEventListener("click", (event) => {
+    if (event.target.closest("[data-modal-close]")) closeSkillModal();
+});
+
+document.addEventListener("keydown", (event) => {
+    if (event.key === "Escape") closeSkillModal();
+});
 
 function renderSkills() {
     const filteredSkills = getFilteredSkills();
