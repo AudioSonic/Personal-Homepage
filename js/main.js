@@ -135,10 +135,10 @@ function initProjects(){
 
 async function initComponents() {
     await Promise.all([
-        loadComponent("../html/components/header.html", "header"),
-        loadComponent("../html/components/footer.html", "footer"),
-        loadComponent("../html/components/sidebar.html", "sidebar"),
-        loadComponent("../html/components/sidebar-mobile.html", "sidebar-mobile"),
+        loadComponent("html/components/header.html", "header"),
+        loadComponent("html/components/footer.html", "footer"),
+        loadComponent("html/components/sidebar.html", "sidebar"),
+        loadComponent("html/components/sidebar-mobile.html", "sidebar-mobile"),
     ]);
 
     initMobileNavigation();
@@ -149,4 +149,3 @@ async function initComponents() {
 }
 
 initComponents();
-

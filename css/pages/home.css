@@ -212,8 +212,4 @@
     .home-showcase {
         grid-template-columns: minmax(520px, 0.7fr) minmax(500px, 1fr);
     }
-
-    .home-showcase h1 {
-        font-size: 3.6rem;
-    }
 }

@@ -12,14 +12,14 @@ export const projects = [
         github: "https://github.com/AudioSonic/BrightBoost-Landing-Page",
         liveDemo: "https://audiosonic.github.io/BrightBoost-Landing-Page/",
         featured: true,
-        heroImage: "../assets/screenshots/BrightBoost_Screenshot_1.png",
+        heroImage: "assets/screenshots/BrightBoost_Screenshot_1.png",
         screenshots: [
             {
-                src: "../assets/screenshots/BrightBoost_Screenshot_1.png",
+                src: "assets/screenshots/BrightBoost_Screenshot_1.png",
                 alt: "BrightBoost Hero Section"
             },
             {
-                src: "../assets/screenshots/BrightBoost_Screenshot_2.png",
+                src: "assets/screenshots/BrightBoost_Screenshot_2.png",
                 alt: "Brightboost Caroussel"
             }
 
@@ -48,22 +48,22 @@ export const projects = [
         github: "https://github.com/AudioSonic/Nordtech-Manufactoring",
         liveDemo: "https://audiosonic.github.io/Nordtech-Manufactoring/",
         featured: true,
-        heroImage: "../assets/screenshots/Nordtech_Screenshot_1.png",
+        heroImage: "assets/screenshots/Nordtech_Screenshot_1.png",
         screenshots: [
             {
-                src: "../assets/screenshots/Nordtech_Screenshot_2.png",
+                src: "assets/screenshots/Nordtech_Screenshot_2.png",
                 alt: "Dashboard"
             },
             {
-                src: "../assets/screenshots/Nordtech_Screenshot_3.png",
+                src: "assets/screenshots/Nordtech_Screenshot_3.png",
                 alt: "Application Mdal"
             },
             {
-                src: "../assets/screenshots/Nordtech_Screenshot_4.png",
+                src: "assets/screenshots/Nordtech_Screenshot_4.png",
                 alt: "Mobile Version"
             },
                 {
-                src: "../assets/screenshots/Nordtech_Screenshot_5.png",
+                src: "assets/screenshots/Nordtech_Screenshot_5.png",
                 alt: "Mobile Version"
             }
 
@@ -91,22 +91,22 @@ export const projects = [
         github: "https://github.com/AudioSonic/Personal-Homepage",
         liveDemo: "https://audiosonic.github.io/Personal-Homepage/",
         featured: true,
-        heroImage: "../assets/screenshots/Personal_Homepage_Screenshot_1.png",
+        heroImage: "assets/screenshots/Personal_Homepage_Screenshot_1.png",
         screenshots: [
             {
-                src: "../assets/screenshots/Personal_Homepage_Screenshot_1.png",
+                src: "assets/screenshots/Personal_Homepage_Screenshot_1.png",
                 alt: "Startseite"
             },
             {
-                src: "../assets/screenshots/Personal_Homepage_Screenshot_2.png",
+                src: "assets/screenshots/Personal_Homepage_Screenshot_2.png",
                 alt: "Skills Seite"
             },
             {
-                src: "../assets/screenshots/Personal_Homepage_Screenshot_3.png",
+                src: "assets/screenshots/Personal_Homepage_Screenshot_3.png",
                 alt: "Projektseite"
             },
                 {
-                src: "../assets/screenshots/Personal_Homepage_Screenshot_4.png",
+                src: "assets/screenshots/Personal_Homepage_Screenshot_4.png",
                 alt: "Mobile Version"
             }
 
@@ -134,10 +134,10 @@ export const projects = [
         github: "https://github.com/AudioSonic/ApplyHQ",
         liveDemo: "https://audiosonic.github.io/ApplyHQ/",
         featured: true,
-        heroImage: "../assets/screenshots/ApplyHQ_Screenshot_1.png",
+        heroImage: "assets/screenshots/ApplyHQ_Screenshot_1.png",
         screenshots: [
             {
-                src: "../assets/screenshots/ApplyHQ_Screenshot_1.png",
+                src: "assets/screenshots/ApplyHQ_Screenshot_1.png",
                 alt: "Startseite"
             }
 
@@ -166,14 +166,14 @@ export const projects = [
         github: "",
         liveDemo: "",
         featured: true,
-        heroImage: "../assets/screenshots/itmMANAGER_Screenshot_1.png",
+        heroImage: "assets/screenshots/itmMANAGER_Screenshot_1.png",
         screenshots: [
             {
-                src: "../assets/screenshots/itmMANAGER_Screenshot_1.png",
+                src: "assets/screenshots/itmMANAGER_Screenshot_1.png",
                 alt: "Startseite"
             },
             {
-                src: "../assets/screenshots/itmMANAGER_Screenshot_2.png",
+                src: "assets/screenshots/itmMANAGER_Screenshot_2.png",
                 alt: "Startseite"
             }
 
@@ -201,7 +201,7 @@ export const projects = [
         github: "",
         liveDemo: "",
         featured: true,
-        heroImage: "../assets/screenshots/itmPAGES_Screenshot_1.png",
+        heroImage: "assets/screenshots/itmPAGES_Screenshot_1.png",
         screenshots: [
         ],
         highlights: [
@@ -227,14 +227,14 @@ export const projects = [
         github: "",
         liveDemo: "",
         featured: true,
-        heroImage: "../assets/screenshots/Massenaenderung_Screenshot_1.png",
+        heroImage: "assets/screenshots/Massenaenderung_Screenshot_1.png",
         screenshots: [
             {
-                src: "../assets/screenshots/Massenaenderung_Screenshot_1.png",
+                src: "assets/screenshots/Massenaenderung_Screenshot_1.png",
                 alt: "Startseite"
             },
             {
-                src: "../assets/screenshots/Massenaenderung_Screenshot_2.png",
+                src: "assets/screenshots/Massenaenderung_Screenshot_2.png",
                 alt: "Startseite"
             }
 

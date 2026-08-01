@@ -164,7 +164,7 @@ export function createProjectCard(project){
         gitHubLink.href = project.github;
         gitHubLink.target = "_blank";
         gitHubLink.rel = "noopener noreferrer";
-        gitHubLinkIcon.src = "../assets/logos/github_logo.png";
+        gitHubLinkIcon.src = "assets/logos/github_logo.png";
         gitHubLinkIcon.alt = "GitHub Logo";
         gitHubLink.append(gitHubLinkIcon);
         gitHubLink.classList.add("project-github-link");
@@ -278,7 +278,7 @@ function getProjectImage(project){
         return project.screenshots[0].src;
     }
 
-    return "../assets/screenshots/ApplyHQ_Screenshot_1.png";
+    return "assets/screenshots/ApplyHQ_Screenshot_1.png";
 }
 
 function getProjectSkill(id){
