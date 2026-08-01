@@ -105,9 +105,17 @@ export const projects = [
                 src: "assets/screenshots/Personal_Homepage_Screenshot_3.png",
                 alt: "Projektseite"
             },
-                {
+            {
                 src: "assets/screenshots/Personal_Homepage_Screenshot_4.png",
                 alt: "Mobile Version"
+            },
+            {
+                src: "assets/screenshots/Personal_Homepage_Screenshot_5.png",
+                alt: "Responsive Ansicht"
+            },
+            {
+                src: "assets/screenshots/Personal_Homepage_Screenshot_6.png",
+                alt: "Weitere Projektansicht"
             }
 
         ],
