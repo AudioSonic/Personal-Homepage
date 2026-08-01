@@ -290,7 +290,7 @@ export const skills = [
         category: "software",
         description: "Erstellt Berichte, Formulare und Druckvorlagen.",
         detailedDescription: "Erstellung individueller Berichte, Formulare und Druckvorlagen mit List & Label.",
-        image: "assets/logos/List_and_Label_logo.png",
+        image: "assets/logos/list_and_label_logo.png",
         skillList: [],
         highlights: ["Individuelle Berichte", "Druckvorlagen", "Formulardesign", "Datenbindung", "Export und Ausgabeformate"]
     },
