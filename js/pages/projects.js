@@ -1,6 +1,9 @@
 import { initCategoryFilter } from "./helper.js";
-import { projects } from "../data/projects.js";
-import { skills } from "../data/skills.js";
+const loadJson = (path) => fetch(new URL(path, import.meta.url)).then((response) => response.json());
+const [projects, skills] = await Promise.all([
+    loadJson("../../data/projects.json"),
+    loadJson("../../data/skills.json")
+]);
 
 const DEFAULT_CATEGORY = "personal";
 let activeCategory = DEFAULT_CATEGORY;

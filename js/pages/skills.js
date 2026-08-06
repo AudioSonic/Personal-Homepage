@@ -1,6 +1,9 @@
 import { initCategoryFilter } from "./helper.js";
-import { skills } from "../data/skills.js";
-import { projects } from "../data/projects.js";
+const loadJson = (path) => fetch(new URL(path, import.meta.url)).then((response) => response.json());
+const [skills, projects] = await Promise.all([
+    loadJson("../../data/skills.json"),
+    loadJson("../../data/projects.json")
+]);
 
 let activeCategory = "web";
 
