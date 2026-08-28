@@ -273,7 +273,8 @@
             20,
             22,
             23,
-            26
+            26,
+            29
         ],
         "github": "",
         "liveDemo": "",
@@ -299,5 +300,43 @@
         ],
         "startedAt": "2025-09-02",
         "completedAt": "2025-12-05"
+    },
+    {
+        "id": 9,
+        "title": "Nexora",
+        "shortDescription": "Eine persönliche Lernplattform zur strukturierten Entwicklung und Verwaltung von Skills und Lernfortschritten.",
+        "longDescription": "Nexora ist eine persönliche Lernplattform, die dabei unterstützt, neue Skills strukturiert und nachvollziehbar zu erlernen. Lerninhalte werden in Skills, Phasen, Themen und Übungen gegliedert und können Schritt für Schritt abgeschlossen werden. Fortschritte, abgeschlossene Themen und Phasen werden automatisch aus den hinterlegten Daten berechnet. Das Projekt wird kontinuierlich erweitert und soll langfristig von einer zunächst statischen JavaScript-Anwendung zu einer vollständigen Webanwendung mit ASP.NET Core Backend, REST API und Datenbank ausgebaut werden. Der aktuelle Frontend-Prototyp wurde mit HTML5, CSS3 und JavaScript entwickelt und legt den Grundstein für die später hinzukommende Backend- und API-Architektur.",
+        "category": "personal",
+        "type": "web",
+        "status": "inProgress",
+        "technologies": [
+            1,
+            2,
+            3,
+            21,
+            28
+        ],
+        "github": "https://github.com/AudioSonic/Nexora",
+        "liveDemo": "https://audiosonic.github.io/Nexora/",
+        "featured": true,
+        "heroImage": "assets/screenshots/Nexora_Screenshot_1.png",
+        "screenshots": [
+            {
+                "src": "assets/screenshots/Nexora_Screenshot_1.png",
+                "alt": "Nexora Desktop-Version"
+            }
+        ],
+        "highlights": [
+            "Hierarchische Strukturierung von Skills, Phasen, Themen und Übungen",
+            "Dynamische Generierung der Benutzeroberfläche aus strukturierten Daten",
+            "Automatische Berechnung von Themen-, Phasen- und Skill-Fortschritten",
+            "Fortschrittsanzeige für einzelne Skills und den gesamten Lernstand",
+            "Schrittweise Freischaltung von Phasen abhängig vom Lernfortschritt",
+            "Automatische Freischaltung des Abschlussprojekts nach Abschluss aller Themen",
+            "Responsive Benutzeroberfläche für Desktop und mobile Geräte",
+            "Kontinuierlich erweiterbares Konzept mit geplanter ASP.NET-Core-REST-API und Datenbank"
+        ],
+        "startedAt": "2026-08-16",
+        "completedAt": null
     }
 ]

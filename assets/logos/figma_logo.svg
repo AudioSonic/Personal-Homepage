@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 180" role="img" aria-labelledby="title">
+  <title id="title">Figma Logo</title>
+  <path fill="#F24E1E" d="M30 0h30v60H30A30 30 0 1 1 30 0Z"/>
+  <path fill="#FF7262" d="M30 60h30v60H30a30 30 0 1 1 0-60Z"/>
+  <path fill="#A259FF" d="M30 120h30v30a30 30 0 1 1-30-30Z"/>
+  <path fill="#1ABCFE" d="M60 0h30a30 30 0 1 1 0 60H60V0Z"/>
+  <circle cx="75" cy="90" r="30" fill="#0ACF83"/>
+</svg>

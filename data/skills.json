@@ -446,5 +446,21 @@
             "Repository-Vergleiche",
             "Arbeitsabläufe ohne CLI"
         ]
+    },
+    {
+        "id": 29,
+        "name": "Figma",
+        "category": "tools",
+        "description": "Ein webbasiertes Design- und Kollaborationstool zur Konzeption interaktiver Benutzeroberflächen.",
+        "detailedDescription": "Figma ermöglicht die Entwicklung strukturierter UI/UX-Konzepte von der ersten Wireframe-Idee bis zum interaktiven Prototyp. Designs, Komponenten und Benutzerflüsse lassen sich zentral erstellen, iterativ verfeinern und als gemeinsame Grundlage für die anschließende Implementierung nutzen.",
+        "image": "assets/logos/figma_logo.svg",
+        "skillList": [],
+        "highlights": [
+            "UI/UX-Konzeption",
+            "Wireframes und Mockups",
+            "Interaktive Prototypen",
+            "Komponenten und Designsysteme",
+            "Kollaboration und Übergabe an die Entwicklung"
+        ]
     }
 ]
