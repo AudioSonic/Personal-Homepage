@@ -150,8 +150,8 @@
     {
         "id": 4,
         "title": "ApplyHQ",
-        "shortDescription": "Eine Webanwendung zur Erfassung, Organisation und Nachverfolgung von Bewerbungen.",
-        "longDescription": "ApplyHQ ist eine moderne Web-App zur Verwaltung von Bewerbungen und wurde als praxisnahes Lern- und Portfolio-Projekt entwickelt. Ziel der Anwendung ist es, den gesamten Bewerbungsprozess an einem zentralen Ort zu organisieren – von der Erfassung neuer Bewerbungen über die Verwaltung des aktuellen Status bis hin zur schnellen Suche und Bearbeitung bestehender Einträge.  Die Anwendung wurde mit HTML5, CSS3 und modernem JavaScript entwickelt und setzt auf eine modulare Architektur mit wiederverwendbaren UI-Komponenten und dynamischem Rendering. Bewerbungsdaten werden lokal im Browser gespeichert und können über JSON-Dateien importiert oder exportiert werden. Darüber hinaus verfügt ApplyHQ über ein responsives Design, Such-, Filter- und Sortierfunktionen sowie Unterstützung als Progressive Web App (PWA), wodurch die Anwendung auf Desktop- und Mobilgeräten installiert und wie eine native App genutzt werden kann. Das Projekt wird kontinuierlich weiterentwickelt und dient als Grundlage für den schrittweisen Ausbau zu einer vollwertigen Bewerbungsplattform.",
+        "shortDescription": "Eine Webanwendung zur Verwaltung und Automatisierung des Bewerbungsprozesses mit automatisierter Stellensuche und KI-gestützter Bewerbungsanalyse.",
+        "longDescription": "ApplyHQ ist eine moderne Web-App zur zentralen Verwaltung und schrittweisen Automatisierung des Bewerbungsprozesses. Das Projekt wurde als praxisnahes Lern- und Portfolio-Projekt entwickelt und umfasst inzwischen weit mehr als die reine Erfassung und Verwaltung von Bewerbungen. Neben klassischen Funktionen wie CRUD-Verwaltung, Suche, Filterung, Sortierung, Local Storage, JSON-Import/-Export und Progressive-Web-App-Unterstützung verfügt ApplyHQ über automatisierte Stellensuche auf Basis individuell konfigurierbarer Suchprofile. Über eine serverseitige Schnittstelle können passende Stellenanzeigen unter anderem aus den Datenquellen der Bundesagentur für Arbeit und Arbeitnow recherchiert und in die Anwendung übernommen werden. Ein weiterer Schwerpunkt ist die KI-gestützte Verarbeitung von Bewerbungen. Stellenanzeigen werden automatisiert analysiert, strukturierte Anforderungen und Technologien extrahiert und anschließend mit dem persönlichen Bewerberprofil abgeglichen. Auf dieser Grundlage kann ApplyHQ passende Erfahrungen, Skills und Projekte identifizieren und eine Einschätzung der Passung erstellen. Darüber hinaus unterstützt die Anwendung die automatisierte Erstellung, Qualitätsprüfung und Überarbeitung individueller Anschreiben. Die fertigen Anschreiben können anschließend über einen lokal ausgeführten PDF-Export in einem eigenen DIN-A4-Layout mit eingebetteten Schriftarten ausgegeben werden. Die technische Weiterentwicklung wurde zu großen Teilen durch KI-gestützte Codegenerierung mit OpenAI Codex unterstützt. Konzeption, Funktionsplanung, Priorisierung, fachliche Kontrolle, Qualitätsprüfung, Tests und die iterative Weiterentwicklung des Systems wurden dabei eigenständig gesteuert. Dadurch dient ApplyHQ zugleich als praktisches Beispiel für den gezielten Einsatz von KI als Entwicklungswerkzeug innerhalb eines eigenständig geplanten Softwareprojekts. Das Projekt wird kontinuierlich weiterentwickelt und verbindet dabei moderne Webentwicklung, API-Integration, lokale Datenhaltung, KI-gestützte Verarbeitung und automatisierte Dokumentenerstellung.",
         "category": "personal",
         "type": "web",
         "status": "inProgress",
@@ -170,17 +170,44 @@
         "heroImage": "assets/screenshots/ApplyHQ_Screenshot_1.png",
         "screenshots": [
             {
-                "src": "assets/screenshots/ApplyHQ_Screenshot_1.png",
-                "alt": "Startseite"
+            "src": "assets/screenshots/ApplyHQ_Screenshot_1.png",
+            "alt": "ApplyHQ Dashboard"
+            },
+            {
+            "src": "assets/screenshots/ApplyHQ_Screenshot_2.png",
+            "alt": "Persönliche Profilübersicht"
+            },
+            {
+            "src": "assets/screenshots/ApplyHQ_Screenshot_3.png",
+            "alt": "Einrichtung eines Suchprofils"
+            },
+            {
+            "src": "assets/screenshots/ApplyHQ_Screenshot_4.png",
+            "alt": "KI gesteuerte Stellenanalyse"
+            },
+            {
+            "src": "assets/screenshots/ApplyHQ_Screenshot_5.png",
+            "alt": "KI gesteuertes Matching"
+            },
+            {
+            "src": "assets/screenshots/ApplyHQ_Screenshot_6.png",
+            "alt": "KI generiertes Anschreiben"
             }
         ],
         "highlights": [
-            "Vollständige CRUD-Verwaltung für Bewerbungen",
-            "Suche, Filter und Sortierung in Echtzeit",
-            "Modulare Architektur mit wiederverwendbaren UI-Komponenten",
-            "JSON-Import und -Export sowie Local Storage",
-            "Progressive Web App (PWA) mit Installation auf Desktop und Smartphone",
-            "Responsives Design für alle Bildschirmgrößen"
+            "Vollständige CRUD-Verwaltung und Nachverfolgung von Bewerbungen",
+            "Automatisierte Stellensuche anhand individuell konfigurierbarer Suchprofile",
+            "Anbindung an Stellenangebote der Bundesagentur für Arbeit und Arbeitnow",
+            "KI-gestützte Analyse von Stellenanzeigen und strukturiertes Anforderungsprofil",
+            "KI-gestütztes Matching zwischen Stellenanforderungen und Bewerberprofil",
+            "Automatisierte Erstellung, Qualitätsprüfung und Überarbeitung von Anschreiben",
+            "Lokaler PDF-Export mit eigenem DIN-A4-Bewerbungsdesign und eingebetteten Carlito-Schriftarten",
+            "Suche, Filterung und Sortierung in Echtzeit",
+            "Modulare Architektur mit wiederverwendbaren UI-Komponenten und dynamischem Rendering",
+            "JSON-Import/-Export und lokale Datenspeicherung",
+            "Progressive Web App mit Installation auf Desktop und Smartphone",
+            "Responsives Design für unterschiedliche Bildschirmgrößen",
+            "KI-gestützte Entwicklung mit OpenAI Codex als Coding-Assistent"
         ],
         "startedAt": "2026-07-09",
         "completedAt": ""
@@ -302,7 +329,7 @@
         "completedAt": "2025-12-05"
     },
     {
-        "id": 9,
+        "id": 8,
         "title": "Nexora",
         "shortDescription": "Eine persönliche Lernplattform zur strukturierten Entwicklung und Verwaltung von Skills und Lernfortschritten.",
         "longDescription": "Nexora ist eine persönliche Lernplattform, die dabei unterstützt, neue Skills strukturiert und nachvollziehbar zu erlernen. Lerninhalte werden in Skills, Phasen, Themen und Übungen gegliedert und können Schritt für Schritt abgeschlossen werden. Fortschritte, abgeschlossene Themen und Phasen werden automatisch aus den hinterlegten Daten berechnet. Das Projekt wird kontinuierlich erweitert und soll langfristig von einer zunächst statischen JavaScript-Anwendung zu einer vollständigen Webanwendung mit ASP.NET Core Backend, REST API und Datenbank ausgebaut werden. Der aktuelle Frontend-Prototyp wurde mit HTML5, CSS3 und JavaScript entwickelt und legt den Grundstein für die später hinzukommende Backend- und API-Architektur.",
