@@ -219,11 +219,11 @@
         "longDescription": "Der itm:MANAGER ist eine Software zur Verwaltung von Kursprogrammen für Bildungsstätten. Kurse, Teilnehmer und Anmeldungen werden zentral gespeichert und verwaltet. Über einen Webservice werden die Kursdaten an die jeweiligen Webseiten übertragen. Ich war an der Pflege und Weiterentwicklung beteiligt, integrierte neue Funktionen, suchte und behob Fehler und pflegte die Dokumentation.",
         "category": "professional",
         "type": "software",
-        "status": "inProgress",
+        "status": "completed",
         "technologies": [
-            8,
-            11,
             13,
+            11,
+            8,
             9,
             20,
             22,
@@ -260,7 +260,7 @@
         "longDescription": "itm:PAGES stattet Kursprogrammhefte von Volkshochschulen mit direkten Links zu den jeweiligen Kursseiten aus. Jeder Kurs erhält einen Button, über den Leser direkt zur passenden Kursseite auf der Website der Volkshochschule gelangen. Die fertigen Hefte werden anschließend auf den jeweiligen Webseiten eingebunden. Ich erstelle die Hefte und bin allein für die Pflege und Erweiterung des Programms verantwortlich. Dafür habe ich den bestehenden Code refaktoriert und zahlreiche redundante Arbeitsschritte automatisiert.",
         "category": "professional",
         "type": "software",
-        "status": "inProgress",
+        "status": "completed",
         "technologies": [
             8,
             10,
