@@ -462,5 +462,21 @@
             "Komponenten und Designsysteme",
             "Kollaboration und Übergabe an die Entwicklung"
         ]
+    },
+    {
+        "id": 30,
+        "name": "React",
+        "category": "web",
+        "description": "Eine JavaScript-Bibliothek zur Entwicklung komponentenbasierter Benutzeroberflächen.",
+        "detailedDescription": "React ermöglicht die Entwicklung moderner und interaktiver Benutzeroberflächen aus wiederverwendbaren Komponenten.",
+        "image": "assets/logos/react_logo.svg",
+        "skillList": [],
+        "highlights": [
+            "Komponentenbasierte Benutzeroberflächen",
+            "Wiederverwendbare UI-Komponenten",
+            "Dynamische Zustände und Interaktionen",
+            "Deklarative Benutzeroberflächen",
+            "Strukturierte Frontend-Architekturen"
+        ]
     }
 ]

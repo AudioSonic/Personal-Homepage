@@ -53,10 +53,7 @@ function openProjectModal(project) {
         listItem.textContent = highlight;
         return listItem;
     }));
-    projectModalTechnologies.replaceChildren(...(project.technologies ?? [])
-        .map(getProjectSkill)
-        .filter(Boolean)
-        .map(createProjectSkill));
+    projectModalTechnologies.replaceChildren(...getProjectTechnologies(project).map(createProjectSkill));
     projectModalPeriod.textContent = `Zeitraum: ${formatProjectDate(project.startedAt)} – ${project.completedAt ? formatProjectDate(project.completedAt) : "heute"}`;
     projectModalLinks.replaceChildren(...[
         createProjectLink(project.github, "GitHub", "GitHub öffnen"),
@@ -181,9 +178,7 @@ export function createProjectCard(project){
     additionalDetailsButton.type = "button";
     additionalDetailsButton.addEventListener("click", () => openProjectModal(project));
 
-    const projectSkillItems = (project.technologies ?? [])
-        .map(getProjectSkill)
-        .filter(Boolean);
+    const projectSkillItems = getProjectTechnologies(project);
     projectSkills.replaceChildren(...projectSkillItems.map(createProjectSkill));
 
     projectCard.classList.add("project-card");
@@ -270,6 +265,15 @@ function createProjectSkill(technology){
     });
 
     return projectSkill;
+}
+
+function getProjectTechnologies(project) {
+    // The order in the project's technologies array is the display priority.
+    // Do not sort by skill ID: the first entries are the ones kept visible
+    // when the project card does not have enough room for every tag.
+    return (project.technologies ?? [])
+        .map(getProjectSkill)
+        .filter(Boolean);
 }
 
 function getProjectImage(project){
