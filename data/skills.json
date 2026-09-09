@@ -2,7 +2,7 @@
     {
         "id": 1,
         "name": "HTML5",
-        "category": "web",
+        "category": "frontend",
         "description": "Eine Auszeichnungssprache zur semantischen Strukturierung von Webseiten.",
         "detailedDescription": "HTML5 ermöglicht semantische Webseiten mit klarer Struktur und Fokus auf Barrierefreiheit und Suchmaschinenoptimierung. Dadurch entsteht eine solide Grundlage für verständliche, zugängliche und gut auffindbare Inhalte.",
         "image": "assets/logos/html_logo.png",
@@ -18,7 +18,7 @@
     {
         "id": 2,
         "name": "CSS3",
-        "category": "web",
+        "category": "frontend",
         "description": "Eine Stylesheet-Sprache zur Gestaltung responsiver und benutzerfreundlicher Webseiten.",
         "detailedDescription": "CSS3 ermöglicht moderne Layouts, Animationen und responsive Designs. Klare visuelle Strukturen lassen sich dabei mit flexiblen Komponenten verbinden, die sich an unterschiedliche Bildschirmgrößen anpassen.",
         "image": "assets/logos/css_logo.png",
@@ -34,7 +34,7 @@
     {
         "id": 3,
         "name": "JavaScript",
-        "category": "web",
+        "category": "frontend",
         "description": "Eine Programmiersprache zur Entwicklung interaktiver und dynamischer Webanwendungen.",
         "detailedDescription": "Entwicklung interaktiver Benutzeroberflächen und dynamischer Funktionen mit JavaScript.",
         "image": "assets/logos/js_logo.png",
@@ -50,7 +50,7 @@
     {
         "id": 4,
         "name": "TypeScript",
-        "category": "web",
+        "category": "frontend",
         "description": "Eine Programmiersprache, die JavaScript um statische Typisierung erweitert.",
         "detailedDescription": "TypeScript ermöglicht wartbare Anwendungen durch typsicheren JavaScript-Code. Interfaces und explizite Typen helfen dabei, Fehler früh zu erkennen und komplexe Codebasen verständlich zu halten.",
         "image": "assets/logos/typescript_logo.png",
@@ -64,41 +64,9 @@
         ]
     },
     {
-        "id": 5,
-        "name": "Node.js",
-        "category": "web",
-        "description": "Eine Laufzeitumgebung zur Ausführung von JavaScript außerhalb des Browsers.",
-        "detailedDescription": "Entwicklung serverseitiger Anwendungen und Backend-Logik mit Node.js.",
-        "image": "assets/logos/nodejs_logo.png",
-        "skillList": [],
-        "highlights": [
-            "Serverseitige JavaScript-Anwendungen",
-            "REST- und API-Backends",
-            "Ereignisbasierte Verarbeitung",
-            "Datei- und Datenbankzugriff",
-            "Wiederverwendbare Services"
-        ]
-    },
-    {
-        "id": 6,
-        "name": "Express.js",
-        "category": "web",
-        "description": "Ein Webframework zur Entwicklung von Webservern und REST-Schnittstellen.",
-        "detailedDescription": "Express.js ermöglicht die Entwicklung von Webservern und REST-APIs auf Basis von Node.js. Routing, Middleware und Fehlerbehandlung lassen sich damit übersichtlich strukturieren und flexibel erweitern.",
-        "image": "assets/logos/express_logo.png",
-        "skillList": [],
-        "highlights": [
-            "REST-API-Entwicklung",
-            "Routing und Middleware",
-            "Request- und Response-Verarbeitung",
-            "Fehlerbehandlung",
-            "Modulare Serverstrukturen"
-        ]
-    },
-    {
         "id": 7,
         "name": "TYPO3",
-        "category": "web",
+        "category": "backend",
         "description": "Ein Content-Management-System zur Erstellung und Verwaltung von Webseiten.",
         "detailedDescription": "Redaktionelle Pflege und Verwaltung von Webseiten mit dem Content-Management-System TYPO3.",
         "image": "assets/logos/typo3_logo.png",
@@ -114,7 +82,7 @@
     {
         "id": 8,
         "name": "C#",
-        "category": "software",
+        "category": "backend",
         "description": "Eine Programmiersprache zur Entwicklung objektorientierter Anwendungen.",
         "detailedDescription": "Entwicklung moderner Desktop- und Softwarelösungen mit der Programmiersprache C#.",
         "image": "assets/logos/csharp_logo.png",
@@ -130,7 +98,7 @@
     {
         "id": 9,
         "name": ".NET",
-        "category": "software",
+        "category": "backend",
         "description": "Eine Entwicklungsplattform zur Erstellung von Anwendungen für verschiedene Einsatzbereiche.",
         "detailedDescription": "Entwicklung von Anwendungen auf Basis der .NET-Plattform für verschiedene Einsatzbereiche.",
         "image": "assets/logos/microsoft_logo.png",
@@ -144,9 +112,41 @@
         ]
     },
     {
+        "id": 31,
+        "name": "ASP.NET Core",
+        "category": "backend",
+        "description": "Ein plattformübergreifendes Framework zur Entwicklung moderner Webanwendungen und Web-APIs.",
+        "detailedDescription": "ASP.NET Core ermöglicht die Entwicklung performanter Webanwendungen und REST-Schnittstellen auf Basis von .NET.",
+        "image": "assets/logos/dotnet_logo.png",
+        "skillList": [],
+        "highlights": [
+            "Webanwendungen mit .NET",
+            "REST- und Web-APIs",
+            "Middleware und Routing",
+            "Abhängigkeitseinspritzung",
+            "Plattformübergreifende Entwicklung"
+        ]
+    },
+    {
+        "id": 32,
+        "name": "REST API",
+        "category": "backend",
+        "description": "Eine standardisierte Schnittstelle zur Kommunikation zwischen Anwendungen über HTTP.",
+        "detailedDescription": "Entwicklung und Anbindung von REST-APIs für den strukturierten Austausch von Daten zwischen Frontend, Backend und externen Anwendungen.",
+        "image": "assets/icons/icon_code.svg",
+        "skillList": [],
+        "highlights": [
+            "HTTP-Endpunkte",
+            "Ressourcenorientierte Schnittstellen",
+            "JSON-Datenverarbeitung",
+            "CRUD-Operationen",
+            "Anbindung von Frontends und Services"
+        ]
+    },
+    {
         "id": 10,
         "name": "WPF",
-        "category": "software",
+        "category": "desktop",
         "description": "Ein UI-Framework zur Entwicklung grafischer Windows-Desktopanwendungen.",
         "detailedDescription": "Entwicklung grafischer Desktopanwendungen mit Windows Presentation Foundation (WPF).",
         "image": "assets/logos/microsoft_logo.png",
@@ -162,7 +162,7 @@
     {
         "id": 11,
         "name": "Windows Forms",
-        "category": "software",
+        "category": "desktop",
         "description": "Ein UI-Framework zur Entwicklung klassischer Windows-Desktopanwendungen.",
         "detailedDescription": "Windows Forms ermöglicht die Erstellung klassischer Desktopanwendungen für Windows. Die übersichtliche Entwicklung mit Standardkomponenten eignet sich besonders für interne Werkzeuge und datenbasierte Anwendungen.",
         "image": "assets/logos/microsoft_logo.png",
@@ -178,7 +178,7 @@
     {
         "id": 12,
         "name": "Entity Framework",
-        "category": "software",
+        "category": "backend",
         "description": "Ein objektrelationales Mapping-Framework für den Datenbankzugriff in .NET.",
         "detailedDescription": "Verwaltung und Anbindung relationaler Datenbanken mit Entity Framework.",
         "image": "assets/logos/entityframework_logo.png",
@@ -194,7 +194,7 @@
     {
         "id": 13,
         "name": "MSSQL",
-        "category": "software",
+        "category": "backend",
         "description": "Ein relationales Datenbankmanagementsystem von Microsoft.",
         "detailedDescription": "Microsoft SQL Server ermöglicht die Entwicklung und Verwaltung relationaler Datenbanken für zuverlässige Anwendungen. Tabellen, Beziehungen und Abfragen werden strukturiert angelegt und auf Datenintegrität ausgelegt.",
         "image": "assets/logos/mssql_logo.png",
@@ -418,7 +418,7 @@
     {
         "id": 27,
         "name": "List & Label",
-        "category": "software",
+        "category": "desktop",
         "description": "Erstellt Berichte, Formulare und Druckvorlagen.",
         "detailedDescription": "Erstellung individueller Berichte, Formulare und Druckvorlagen mit List & Label.",
         "image": "assets/logos/list_and_label_logo.png",
@@ -466,7 +466,7 @@
     {
         "id": 30,
         "name": "React",
-        "category": "web",
+        "category": "frontend",
         "description": "Eine JavaScript-Bibliothek zur Entwicklung komponentenbasierter Benutzeroberflächen.",
         "detailedDescription": "React ermöglicht die Entwicklung moderner und interaktiver Benutzeroberflächen aus wiederverwendbaren Komponenten.",
         "image": "assets/logos/react_logo.svg",

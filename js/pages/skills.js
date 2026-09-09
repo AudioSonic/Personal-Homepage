@@ -5,7 +5,7 @@ const [skills, projects] = await Promise.all([
     loadJson("../../data/projects.json")
 ]);
 
-let activeCategory = "web";
+let activeCategory = "frontend";
 
 const skillsContainer = document.getElementById("skillsContainer");
 const categoryButtons = document.querySelectorAll("[data-category]");
