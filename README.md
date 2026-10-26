@@ -7,8 +7,11 @@ Die **Personal Homepage** ist die persönliche Portfolio-Website von Alexander S
 
 **Live-Demo:** [alexander-stach.dev](https://alexander-stach.dev/)
 
+**Live-Demo:** [alexander-stach.dev](https://alexander-stach.dev/)
+
 ## Zweck
 
+Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessierte können sich über bisherige private und berufliche Projekte, eingesetzte Technologien sowie den persönlichen Werdegang informieren. Das Kontaktformular validiert die Eingaben clientseitig, versendet jedoch keine Nachrichten direkt. Nach dem Absendeversuch wird stattdessen ein Hinweis mit der E-Mail-Adresse angezeigt.
 Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessierte können sich über bisherige private und berufliche Projekte, eingesetzte Technologien sowie den persönlichen Werdegang informieren. Das Kontaktformular validiert die Eingaben clientseitig, versendet jedoch keine Nachrichten direkt. Nach dem Absendeversuch wird stattdessen ein Hinweis mit der E-Mail-Adresse angezeigt.
 
 ## Highlights
@@ -20,6 +23,7 @@ Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessiert
 - Screenshot-Karussell für Projektansichten
 - Kategorien und Tabs zur schnellen Filterung der Inhalte
 - Kontaktformular mit clientseitiger Validierung und Hinweis auf die direkte E-Mail-Adresse statt direktem Nachrichtenversand
+- Kontaktformular mit clientseitiger Validierung und Hinweis auf die direkte E-Mail-Adresse statt direktem Nachrichtenversand
 - SEO-Grundlagen mit Meta-Tags, Open Graph, Sitemap und `robots.txt`
 - Deployment als statische Website, unter anderem für GitHub Pages geeignet
 
@@ -29,6 +33,7 @@ Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessiert
 - **CSS3** für Layout, responsive Design, Komponenten und Animationen
 - **JavaScript (ES Modules)** für Navigation, Datenverarbeitung und Interaktionen
 - **JSON** als Datenbasis für Projekte, Skills und weitere Inhalte
+- **Node.js** und `backend/` als vorbereitete, derzeit nicht implementierte Backend-Struktur
 - **Node.js** und `backend/` als vorbereitete, derzeit nicht implementierte Backend-Struktur
 - **GitHub Pages** für die Veröffentlichung der statischen Website
 
