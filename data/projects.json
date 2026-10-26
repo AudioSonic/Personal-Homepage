@@ -90,63 +90,65 @@
         "startedAt": "2026-04-17",
         "completedAt": "2026-05-20"
     },
-    {
-        "id": 3,
-        "title": "Persönliche Homepage",
-        "shortDescription": "Eine modulare Portfolio-Website zur Präsentation von Fähigkeiten, Projekten und Erfahrungen.",
-        "longDescription": "Meine Portfolio-Homepage dient sowohl als persönliche Präsentation meiner Fähigkeiten und Projekte als auch als praxisnahes Lernprojekt im Bereich Frontend-Entwicklung. Ziel war es, eine moderne und professionelle Website zu entwickeln, die als Portfolio für Bewerbungen genutzt werden kann und gleichzeitig den Einstieg in aktuelle Webtechnologien vertieft.  Die Website wurde mit HTML5, CSS3 und JavaScript entwickelt und folgt einem modularen Aufbau mit wiederverwendbaren Komponenten, dynamisch geladenen Inhalten und einer klaren Trennung von Daten, Logik und Darstellung. Projekte und Skills werden vollständig dynamisch gerendert, wodurch moderne JavaScript-Konzepte wie ES Modules, DOM-Manipulation, State Management und asynchrone Datenverarbeitung praktisch umgesetzt werden. Besonderes Augenmerk lag außerdem auf einem responsiven Design, einer wartbaren Architektur und einer sauberen Codebasis.",
-        "category": "personal",
-        "type": "web",
-        "status": "inProgress",
-        "technologies": [
-            1,
-            2,
-            3,
-            20,
-            21,
-            24,
-            26
-        ],
-        "github": "https://github.com/AudioSonic/Personal-Homepage",
-        "liveDemo": "https://audiosonic.github.io/Personal-Homepage/",
-        "featured": true,
-        "heroImage": "assets/screenshots/Personal_Homepage_Screenshot_1.png",
-        "screenshots": [
-            {
-                "src": "assets/screenshots/Personal_Homepage_Screenshot_1.png",
-                "alt": "Startseite"
-            },
-            {
-                "src": "assets/screenshots/Personal_Homepage_Screenshot_2.png",
-                "alt": "Skills Seite"
-            },
-            {
-                "src": "assets/screenshots/Personal_Homepage_Screenshot_3.png",
-                "alt": "Projektseite"
-            },
-            {
-                "src": "assets/screenshots/Personal_Homepage_Screenshot_4.png",
-                "alt": "Mobile Version"
-            },
-            {
-                "src": "assets/screenshots/Personal_Homepage_Screenshot_5.png",
-                "alt": "Responsive Ansicht"
-            },
-            {
-                "src": "assets/screenshots/Personal_Homepage_Screenshot_6.png",
-                "alt": "Weitere Projektansicht"
-            }
-        ],
-        "highlights": [
-            "Modulare Architektur mit wiederverwendbaren Komponenten",
-            "Dynamisches Rendering von Skills und Projekten",
-            "Responsive Design mit Dark-/Light-Mode",
-            "Einsatz von ES Modules, fetch() und State Management",
-            "Klare Trennung von Daten, Logik und Darstellung"
-        ],
-        "startedAt": "2026-03-29",
-        "completedAt": ""
-    },
+	{
+		"id": 3,
+		"title": "Persönliche Homepage",
+		"shortDescription": "Eine responsive Portfolio-Website zur Präsentation meiner Projekte, Fähigkeiten und beruflichen Qualifikationen mit dynamischer Inhaltsverwaltung.",
+		"longDescription": "Meine persönliche Homepage ist eine Portfolio-Website zur Präsentation meiner Fähigkeiten, Projekte und beruflichen Qualifikationen. Sie wurde als praxisnahes Lern- und Portfolio-Projekt entwickelt und dient zugleich als zentrale Anlaufstelle für meine Bewerbungen im Bereich Softwareentwicklung. Die produktive Website basiert auf HTML5, CSS3 und JavaScript ES Modules. Sie verwendet eine modulare Struktur mit wiederverwendbaren HTML-Komponenten, die dynamisch geladen werden, sowie JSON-Dateien zur Verwaltung von Projekt-, Skill- und weiteren Inhaltsdaten. Dadurch sind Inhalte und Darstellung weitgehend voneinander getrennt und können ohne umfangreiche Änderungen an der Seitenstruktur gepflegt werden. Zu den implementierten Funktionen gehören eine dynamische Projekt- und Skill-Übersicht, interaktive Detailansichten, ein Screenshot-Karussell, Filtermöglichkeiten sowie ein responsives Layout mit Dark-/Light-Mode. Darüber hinaus berücksichtigt die Website grundlegende SEO-Anforderungen, darunter Meta-Tags, Open-Graph-Metadaten, eine Sitemap und eine robots.txt. Bei der Entwicklung standen eine nachvollziehbare Codeorganisation, die praktische Anwendung moderner JavaScript-Konzepte und eine professionelle Präsentation eigener Softwareprojekte im Vordergrund.",
+		"category": "personal",
+		"type": "web",
+		"status": "completed",
+		"technologies": [
+			1,
+			2,
+			3,
+			20,
+			21,
+			24,
+			26
+		],
+		"github": "https://github.com/AudioSonic/Personal-Homepage",
+		"liveDemo": "https://audiosonic.github.io/Personal-Homepage/",
+		"featured": true,
+		"heroImage": "assets/screenshots/Personal_Homepage_Screenshot_1.png",
+		"screenshots": [
+			{
+				"src": "assets/screenshots/Personal_Homepage_Screenshot_1.png",
+				"alt": "Startseite der persönlichen Portfolio-Website"
+			},
+			{
+				"src": "assets/screenshots/Personal_Homepage_Screenshot_2.png",
+				"alt": "Übersicht der Fähigkeiten und Technologien"
+			},
+			{
+				"src": "assets/screenshots/Personal_Homepage_Screenshot_3.png",
+				"alt": "Projektübersicht mit Portfolio-Projekten"
+			},
+			{
+				"src": "assets/screenshots/Personal_Homepage_Screenshot_4.png",
+				"alt": "Mobile Darstellung der Website"
+			},
+			{
+				"src": "assets/screenshots/Personal_Homepage_Screenshot_5.png",
+				"alt": "Responsive Darstellung auf unterschiedlichen Bildschirmgrößen"
+			},
+			{
+				"src": "assets/screenshots/Personal_Homepage_Screenshot_6.png",
+				"alt": "Weitere Ansicht der Portfolio-Website"
+			}
+		],
+		"highlights": [
+			"Modulare Website-Struktur mit dynamisch geladenen HTML-Komponenten",
+			"JSON-basierte Verwaltung und dynamisches Rendering von Projekten und Skills",
+			"Interaktive Projekt- und Skill-Detailansichten mit Screenshot-Karussell",
+			"Responsive Gestaltung mit Dark-/Light-Mode",
+			"JavaScript ES Modules und asynchrone Datenverarbeitung mit fetch()",
+			"SEO-Grundlagen mit Meta-Tags, Open Graph, Sitemap und robots.txt",
+			"Statische Veröffentlichung über GitHub Pages"
+		],
+		"startedAt": "2026-03-29",
+		"completedAt": ""
+	},
     {
         "id": 4,
         "title": "ApplyHQ",
