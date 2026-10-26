@@ -5,9 +5,11 @@
 
 Die **Personal Homepage** ist die persönliche Portfolio-Website von Alexander Stach. Sie präsentiert den beruflichen Schwerpunkt als Frontend- und Softwareentwickler und gibt einen kompakten Überblick über Projekte, Fähigkeiten und Kontaktmöglichkeiten.
 
+**Live-Demo:** [alexander-stach.dev](https://alexander-stach.dev/)
+
 ## Zweck
 
-Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessierte können sich über bisherige private und berufliche Projekte, eingesetzte Technologien sowie den persönlichen Werdegang informieren und direkt Kontakt aufnehmen.
+Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessierte können sich über bisherige private und berufliche Projekte, eingesetzte Technologien sowie den persönlichen Werdegang informieren. Das Kontaktformular validiert die Eingaben clientseitig, versendet jedoch keine Nachrichten direkt. Nach dem Absendeversuch wird stattdessen ein Hinweis mit der E-Mail-Adresse angezeigt.
 
 ## Highlights
 
@@ -17,7 +19,7 @@ Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessiert
 - Projekt- und Skill-Details in interaktiven Modalfenstern
 - Screenshot-Karussell für Projektansichten
 - Kategorien und Tabs zur schnellen Filterung der Inhalte
-- Kontaktformular mit clientseitiger Validierung
+- Kontaktformular mit clientseitiger Validierung und Hinweis auf die direkte E-Mail-Adresse statt direktem Nachrichtenversand
 - SEO-Grundlagen mit Meta-Tags, Open Graph, Sitemap und `robots.txt`
 - Deployment als statische Website, unter anderem für GitHub Pages geeignet
 
@@ -27,8 +29,20 @@ Die Website dient als zentrale digitale Visitenkarte und Portfolio. Interessiert
 - **CSS3** für Layout, responsive Design, Komponenten und Animationen
 - **JavaScript (ES Modules)** für Navigation, Datenverarbeitung und Interaktionen
 - **JSON** als Datenbasis für Projekte, Skills und weitere Inhalte
-- **Node.js** als vorbereitete Backend-Struktur
+- **Node.js** und `backend/` als vorbereitete, derzeit nicht implementierte Backend-Struktur
 - **GitHub Pages** für die Veröffentlichung der statischen Website
+
+Die produktive Implementierung befindet sich im Repository-Stamm und basiert auf statischem HTML, CSS und JavaScript. Der Ordner `react-app/` enthält einen unfertigen, experimentellen React-/TypeScript-/Vite-Entwicklungsstand und stellt derzeit nicht die produktive Website dar.
+
+## Lokaler Start
+
+Da die Website HTML-Komponenten und JSON-Daten per `fetch()` lädt, sollte sie über einen lokalen HTTP-Server und nicht direkt über `file://` geöffnet werden. Mit Python kann sie beispielsweise aus dem Repository-Stamm gestartet werden:
+
+```bash
+python -m http.server 8000
+```
+
+Anschließend ist die Website unter [http://localhost:8000](http://localhost:8000) erreichbar. Der Befehl benötigt eine installierte Python-Version. Für die produktive statische Version sind die npm-Skripte der unfertigen React-Anwendung nicht erforderlich.
 
 ## Projektstruktur
 

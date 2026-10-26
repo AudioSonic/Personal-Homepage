@@ -1,0 +1,80 @@
+.home-page .content-wrapper > .background-card {
+    background-position: right center;
+}
+
+.home-page #footer {
+    display: none;
+}
+
+.sidebar-grid{
+    display: grid;
+    grid-template-columns: minmax(250px, 350px) 1fr;
+    height: 100vh;
+    overflow: hidden;
+}
+
+html,
+body,
+#root {
+    min-height: 100%;
+}
+
+body {
+    background-color: var(--color-background);
+}
+
+.content-wrapper {
+    width: 100%;
+    min-width: 0;
+}
+
+#header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: color-mix(in srgb, var(--color-surface) 92%, transparent);
+    border-bottom: 1px solid var(--color-border);
+}
+
+.background-card {
+    position: sticky;
+    top: 10px;
+    margin: 10px 8px;
+    height: calc(100vh - 20px);
+    overflow-y: auto;
+    overflow-x: hidden;
+    background-image: var(--background-image);
+    background-size: cover;
+    background-position: center;
+}
+
+aside .background-card {
+    top: 10px;
+}
+
+@media (max-width: 1023px) {
+    .sidebar-grid {
+        display: block;
+        height: auto;
+        overflow: visible;
+    }
+
+    .background-card {
+        position: relative;
+        top: 0;
+        margin: 10px 8px;
+        height: auto;
+        min-height: 100vh;
+    }
+}
+
+
+/*   <---- Tablet Ansicht: 768px ---->   */
+@media (min-width: 768px) {
+
+}
+
+/*   <---- Desktop Ansicht: 1024px ---->   */
+@media (min-width: 1024px){
+
+}
