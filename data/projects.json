@@ -331,5 +331,75 @@
         ],
         "startedAt": "2026-09-23",
         "completedAt": "2026-11-01"
+    },
+    {
+        "id": 10,
+        "title": "Chronos",
+        "shortDescription": "Eine browserbasierte Produktivitäts- und Projektmanagement-App für Tagesplanung, Aufgaben, Milestones und fokussierte Arbeitsintervalle.",
+        "longDescription": "Chronos ist eine browserbasierte Produktivitäts- und Projektmanagement-App. Sie verbindet einen persönlichen Tagesplan mit projektbezogenen Aufgaben, Milestones und einem fokussierten Work Mode mit integriertem Timer. Aufgaben können geplant, wiederholt, bearbeitet und mit investierter Zeit erfasst werden. Zusätzlich bietet Chronos Projektübersichten, Projektdetails, Milestones, Kategorien und eine Ressourcenoberfläche. Die Anwendung ist aktuell eine reine Frontend-Anwendung; Daten werden lokal im Browser gespeichert und es gibt kein Backend, Benutzerkonto oder Cloud-Synchronisierung.",
+        "category": "personal",
+        "type": "web",
+        "status": "completed",
+        "technologies": [
+            30,
+            4,
+            3,
+            2,
+            31,
+            9,
+            32
+        ],
+        "github": "https://github.com/AudioSonic/Chronos",
+        "liveDemo": "https://audiosonic.github.io/Chronos/",
+        "featured": true,
+        "heroImage": "assets/screenshots/Chronos_Screenshot_1.png",
+        "screenshots": [
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_1.png",
+                "alt": "Chronos Dashboard und Tagesplanung"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_2.png",
+                "alt": "Chronos Aufgabenverwaltung"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_3.png",
+                "alt": "Chronos Projektdetails"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_4.png",
+                "alt": "Chronos Milestone-Verwaltung"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_5.png",
+                "alt": "Chronos Ressourcenansicht"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_6.png",
+                "alt": "Chronos Einstellungen und Kategorien"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_7.png",
+                "alt": "Chronos Work Mode mit Timer"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_8.png",
+                "alt": "Chronos Projektübersicht"
+            },
+            {
+                "src": "assets/screenshots/Chronos_Screenshot_9.png",
+                "alt": "Chronos weitere Projektansicht"
+            }
+        ],
+        "highlights": [
+            "Tagesplanung mit Kalender und Fortschrittsanzeige",
+            "Aufgabenverwaltung mit Wiederholungen und Zeitfenstern",
+            "Fokussierter Work Mode mit integriertem Aufgabentimer",
+            "Projektverwaltung mit Aufgaben, Milestones und Fortschrittsberechnung",
+            "Lokale Persistenz über localStorage ohne Backend oder Benutzerkonto",
+            "Responsive React-Anwendung mit TypeScript und Vite"
+        ],
+        "startedAt": "2026-09-13",
+        "completedAt": "2026-10-26"
     }
 ]
