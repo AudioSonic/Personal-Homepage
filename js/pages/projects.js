@@ -77,6 +77,8 @@ function updateProjectScreenshot() {
     const screenshot = activeProjectScreenshots[activeScreenshotIndex];
     projectModalScreenshot.src = screenshot.src;
     projectModalScreenshot.alt = screenshot.alt || projectModalTitle.textContent;
+    projectModalScreenshot.loading = "lazy";
+    projectModalScreenshot.decoding = "async";
     const hasMultipleScreenshots = activeProjectScreenshots.length > 1;
     projectModalPrevious.hidden = !hasMultipleScreenshots;
     projectModalNext.hidden = !hasMultipleScreenshots;
@@ -158,7 +160,14 @@ export function createProjectCard(project){
     const hr = document.createElement("hr");
 
     projectScreenshot.src = getProjectImage(project);
+    const projectImageSources = getProjectImageSources(project);
+    if (projectImageSources) {
+        projectScreenshot.srcset = projectImageSources.srcset;
+        projectScreenshot.sizes = "(max-width: 767px) 100vw, (max-width: 1199px) 50vw, 33vw";
+    }
     projectScreenshot.alt = project.screenshots?.[0]?.alt || project.title;
+    projectScreenshot.loading = "lazy";
+    projectScreenshot.decoding = "async";
     projectType.textContent = projectTypeLabels[project.type] || project.type;
     if (project.github) {
         gitHubLink.href = project.github;
@@ -286,6 +295,21 @@ function getProjectImage(project){
     }
 
     return "assets/screenshots/ApplyHQ_Screenshot_1.png";
+}
+
+function getProjectImageSources(project) {
+    const source = getProjectImage(project);
+    if (!source || !/\.(png|jpe?g)$/i.test(source)) {
+        return null;
+    }
+
+    const optimizedSource = source
+        .replace(/^assets[\\/]/, "assets/optimized/")
+        .replace(/\.(png|jpe?g)$/i, "");
+
+    return {
+        srcset: `${optimizedSource}-640.webp 640w, ${optimizedSource}-1280.webp 1280w`
+    };
 }
 
 function getProjectSkill(id){

@@ -1,7 +1,3 @@
-import { createProjectCards } from "./pages/projects.js";
-import { initContactForm } from "./pages/contact.js";
-import "./pages/skills.js";
-
 async function loadComponent(path, elementId) {
     const element = document.getElementById(elementId);
 
@@ -123,13 +119,14 @@ function initThemeToggle() {
     updateThemeButtonLabel();
 }
 
-function initProjects(){
+async function initProjects(){
     const projectContainer = document.getElementById("project-container");
 
     if (!projectContainer) {
         return;
     }
 
+    const { createProjectCards } = await import("./pages/projects.js?v=20261031");
     projectContainer.replaceChildren(...createProjectCards());
 }
 
@@ -144,8 +141,16 @@ async function initComponents() {
     initMobileNavigation();
     setActiveNavigationLink();
     initThemeToggle();
-    initProjects();
-    initContactForm();
+    await initProjects();
+
+    if (document.getElementById("skillsContainer")) {
+        await import("./pages/skills.js?v=20261031");
+    }
+
+    if (document.querySelector("#contact-form")) {
+        const { initContactForm } = await import("./pages/contact.js?v=20261031");
+        initContactForm();
+    }
 }
 
 initComponents();
