@@ -278,5 +278,58 @@
         ],
         "startedAt": "2026-08-16",
         "completedAt": null
+    },
+    {
+        "id": 9,
+        "title": "Foodfolio",
+        "shortDescription": "Eine persönliche Webanwendung zur Planung von Mahlzeiten, Verwaltung von Rezepten und Lebensmitteln sowie zur automatischen Erstellung einer Einkaufsliste.",
+        "longDescription": "Foodfolio ist eine persönliche Webanwendung zur Planung von Mahlzeiten, Verwaltung von Rezepten und Lebensmitteln sowie zur automatischen Erstellung einer Einkaufsliste. Die Anwendung verbindet ein React-Frontend mit einer ASP.NET-Core-Web-API und einer SQLite-Datenbank. Das Dashboard unterstützt die Tages- und Wochenplanung, Drag-and-drop von Rezepten, die Verwaltung einzelner Lebensmittel sowie die automatische Berechnung von Kalorien und Nährwerten. Zusätzlich bietet Foodfolio eine Rezept- und Lebensmittelverwaltung, Kategorien, eine automatische Einkaufsliste und lokal gespeicherte Tagesziele sowie Erledigungsstatus.",
+        "category": "personal",
+        "type": "web",
+        "status": "completed",
+        "technologies": [
+            30,
+            4,
+            3,
+            2,
+            31,
+            9,
+            32
+        ],
+        "github": "https://github.com/AudioSonic/Foodfolio",
+        "featured": true,
+        "heroImage": "assets/screenshots/Foodfolio_Screenshot_1.png",
+        "screenshots": [
+            {
+                "src": "assets/screenshots/Foodfolio_Screenshot_1.png",
+                "alt": "Foodfolio Dashboard und Tagesplanung"
+            },
+            {
+                "src": "assets/screenshots/Foodfolio_Screenshot_2.png",
+                "alt": "Foodfolio Rezeptverwaltung"
+            },
+            {
+                "src": "assets/screenshots/Foodfolio_Screenshot_3.png",
+                "alt": "Foodfolio Rezeptdetailansicht"
+            },
+            {
+                "src": "assets/screenshots/Foodfolio_Screenshot_4.png",
+                "alt": "Foodfolio Lebensmittelverwaltung"
+            },
+            {
+                "src": "assets/screenshots/Foodfolio_Screenshot_5.png",
+                "alt": "Foodfolio Wochenplanung und Einkaufsliste"
+            }
+        ],
+        "highlights": [
+            "Tages- und Wochenplanung für Mahlzeiten",
+            "Drag-and-drop von Rezepten auf Mahlzeiten",
+            "Verwaltung von Rezepten, Lebensmitteln und Kategorien",
+            "Automatische Nährwertberechnung und frei definierbare Tagesziele",
+            "Automatische Einkaufsliste mit Zusammenfassung gleicher Lebensmittel",
+            "React-Frontend mit ASP.NET-Core-REST-API und SQLite-Datenbank"
+        ],
+        "startedAt": "2026-09-23",
+        "completedAt": "2026-11-01"
     }
 ]
